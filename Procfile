@@ -1,1 +1,1 @@
-web: python chatbot/telegram_bot_integrated.py
+worker: python start_bot.py
