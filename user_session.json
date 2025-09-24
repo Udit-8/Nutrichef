@@ -1,0 +1,74 @@
+{
+  "current_session": {
+    "session_id": "session_20240115_001",
+    "user_id": "user_001",
+    "start_time": "2024-01-15T09:00:00Z",
+    "last_activity": "2024-01-15T09:45:00Z",
+    "current_journey": "recipe_discovery",
+    "journey_history": [
+      {
+        "journey": "recipe_discovery",
+        "start_time": "2024-01-15T09:00:00Z",
+        "status": "active"
+      }
+    ],
+    "conversation_context": {
+      "last_intent": "find_recipe",
+      "last_user_message": "I want to find a healthy dinner recipe",
+      "bot_last_response": "I'd love to help you find a healthy dinner recipe! How would you like to discover recipes today?",
+      "awaiting_user_input": "discovery_method_selection",
+      "conversation_step": 2,
+      "entities_extracted": {
+        "meal_type": "dinner",
+        "preference": "healthy"
+      }
+    }
+  },
+  "active_journeys": {
+    "recipe_discovery": {
+      "status": "active",
+      "current_step": "discovery_method_selection",
+      "step_data": {
+        "options_presented": [
+          "cuisine_type",
+          "available_ingredients", 
+          "dietary_restrictions",
+          "cooking_time",
+          "occasion_based"
+        ],
+        "user_preferences": {
+          "meal_type": "dinner",
+          "health_focus": true
+        }
+      },
+      "session_data": {
+        "search_filters": {},
+        "viewed_recipes": [],
+        "saved_recipes": [],
+        "search_history": []
+      }
+    }
+  },
+  "cross_journey_context": {
+    "user_profile_active": true,
+    "saved_items": {
+      "recipes": [],
+      "meal_plans": [],
+      "grocery_lists": [],
+      "favorite_foods": []
+    },
+    "transition_ready": {
+      "to_cooking_guidance": false,
+      "to_meal_planning": false,
+      "to_grocery_assistance": false,
+      "to_food_tracking": false
+    }
+  },
+  "temporary_data": {
+    "current_search_results": [],
+    "selected_recipe": null,
+    "cooking_session": null,
+    "meal_planning_draft": null,
+    "grocery_list_draft": null
+  }
+}

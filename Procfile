@@ -1,0 +1,1 @@
+web: python chatbot/telegram_bot_integrated.py

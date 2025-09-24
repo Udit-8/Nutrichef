@@ -1,0 +1,199 @@
+{
+  "users": [
+    {
+      "id": "user_001",
+      "profile": {
+        "name": "Sarah Johnson",
+        "created_date": "2024-01-01",
+        "preferences": {
+          "dietary_restrictions": ["gluten_free"],
+          "food_allergies": ["tree_nuts"],
+          "cuisine_preferences": ["mediterranean", "asian", "american"],
+          "cooking_skill": "intermediate",
+          "ingredient_dislikes": ["mushrooms", "liver"],
+          "favorite_ingredients": ["chicken", "quinoa", "broccoli", "salmon"],
+          "spice_tolerance": "medium"
+        },
+        "nutrition_goals": {
+          "daily_calorie_goal": 1800,
+          "macro_targets": {
+            "protein_percent": 30,
+            "carbs_percent": 40, 
+            "fat_percent": 30
+          },
+          "macro_grams": {
+            "protein": 135,
+            "carbs": 180,
+            "fat": 60
+          },
+          "health_goals": ["weight_maintenance", "muscle_building", "heart_health"]
+        },
+        "lifestyle": {
+          "household_size": 2,
+          "cooking_frequency": "daily",
+          "meal_prep_preference": true,
+          "budget_per_week": 150,
+          "time_constraints": {
+            "breakfast": 10,
+            "lunch": 15, 
+            "dinner": 45
+          }
+        },
+        "kitchen_setup": {
+          "equipment": ["oven", "stovetop", "microwave", "blender", "food_processor", "air_fryer"],
+          "cooking_space": "medium",
+          "storage_capacity": "large_fridge_freezer"
+        }
+      },
+      "favorites": {
+        "recipes": ["recipe_001"],
+        "foods": ["food_001", "food_002", "food_003"],
+        "meal_plans": [],
+        "cuisines": ["mediterranean", "asian"]
+      },
+      "usage_patterns": {
+        "most_used_journey": "recipe_discovery",
+        "frequent_search_terms": ["chicken", "healthy", "quick"],
+        "preferred_meal_times": {
+          "breakfast": "07:00",
+          "lunch": "12:30",
+          "dinner": "18:30"
+        },
+        "cooking_days": ["sunday", "tuesday", "thursday", "saturday"]
+      },
+      "achievements": {
+        "recipes_cooked": 15,
+        "days_tracked": 32,
+        "meal_plans_completed": 4,
+        "streak_best": 8,
+        "badges": ["healthy_eater", "recipe_explorer"]
+      }
+    },
+    {
+      "id": "user_002", 
+      "profile": {
+        "name": "Mike Chen",
+        "created_date": "2024-01-10",
+        "preferences": {
+          "dietary_restrictions": ["vegetarian"],
+          "food_allergies": [],
+          "cuisine_preferences": ["asian", "indian", "mexican"],
+          "cooking_skill": "beginner",
+          "ingredient_dislikes": ["cilantro", "olives"],
+          "favorite_ingredients": ["tofu", "rice", "beans", "vegetables"],
+          "spice_tolerance": "high"
+        },
+        "nutrition_goals": {
+          "daily_calorie_goal": 2200,
+          "macro_targets": {
+            "protein_percent": 25,
+            "carbs_percent": 50,
+            "fat_percent": 25
+          },
+          "macro_grams": {
+            "protein": 138,
+            "carbs": 275,
+            "fat": 61
+          },
+          "health_goals": ["weight_loss", "plant_based_nutrition"]
+        },
+        "lifestyle": {
+          "household_size": 1,
+          "cooking_frequency": "few_times_week",
+          "meal_prep_preference": false,
+          "budget_per_week": 75,
+          "time_constraints": {
+            "breakfast": 5,
+            "lunch": 20,
+            "dinner": 30
+          }
+        },
+        "kitchen_setup": {
+          "equipment": ["stovetop", "microwave", "rice_cooker", "blender"],
+          "cooking_space": "small",
+          "storage_capacity": "small_fridge"
+        }
+      },
+      "favorites": {
+        "recipes": ["recipe_002"],
+        "foods": ["food_002", "food_003"],
+        "meal_plans": [],
+        "cuisines": ["asian", "indian"]
+      },
+      "usage_patterns": {
+        "most_used_journey": "calorie_tracking",
+        "frequent_search_terms": ["vegetarian", "quick", "spicy"],
+        "preferred_meal_times": {
+          "breakfast": "08:00", 
+          "lunch": "13:00",
+          "dinner": "19:00"
+        },
+        "cooking_days": ["wednesday", "friday", "sunday"]
+      },
+      "achievements": {
+        "recipes_cooked": 8,
+        "days_tracked": 45,
+        "meal_plans_completed": 1,
+        "streak_best": 12,
+        "badges": ["consistent_tracker", "vegetarian_warrior"]
+      }
+    }
+  ],
+  "user_preferences_templates": {
+    "dietary_restrictions": [
+      "vegetarian",
+      "vegan", 
+      "gluten_free",
+      "dairy_free",
+      "keto",
+      "paleo",
+      "low_carb",
+      "low_fat",
+      "diabetic_friendly"
+    ],
+    "cuisines": [
+      "american",
+      "asian", 
+      "chinese",
+      "indian",
+      "italian",
+      "japanese",
+      "korean",
+      "mexican",
+      "mediterranean",
+      "middle_eastern",
+      "thai",
+      "vietnamese"
+    ],
+    "cooking_skills": ["beginner", "intermediate", "advanced"],
+    "spice_levels": ["none", "mild", "medium", "high", "very_high"],
+    "health_goals": [
+      "weight_loss",
+      "weight_gain", 
+      "weight_maintenance",
+      "muscle_building",
+      "heart_health",
+      "diabetes_management",
+      "digestive_health",
+      "energy_boost"
+    ]
+  },
+  "cross_journey_preferences": {
+    "default_serving_adjustments": {
+      "single_person": 1,
+      "couple": 2,
+      "small_family": 4,
+      "large_family": 6
+    },
+    "time_preference_mapping": {
+      "quick": "under_20_minutes",
+      "moderate": "20_45_minutes", 
+      "elaborate": "over_45_minutes"
+    },
+    "difficulty_progression": {
+      "beginner": ["easy"],
+      "intermediate": ["easy", "medium"],
+      "advanced": ["easy", "medium", "hard"]
+    }
+  }
+}

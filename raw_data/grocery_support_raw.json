@@ -1,0 +1,435 @@
+{
+  "unit_conversions": {
+    "volume": {
+      "cup_to_ml": 240,
+      "tbsp_to_ml": 15,
+      "tsp_to_ml": 5,
+      "fl_oz_to_ml": 29.5735,
+      "pint_to_ml": 473.176,
+      "quart_to_ml": 946.353,
+      "gallon_to_ml": 3785.41
+    },
+    "weight": {
+      "lb_to_g": 453.592,
+      "oz_to_g": 28.3495,
+      "kg_to_g": 1000
+    },
+    "ingredient_specific": {
+      "flour": {"1_cup": "120g", "1_tbsp": "8g"},
+      "sugar": {"1_cup": "200g", "1_tbsp": "12g"},
+      "brown_sugar": {"1_cup": "213g", "1_tbsp": "13g"},
+      "powdered_sugar": {"1_cup": "120g", "1_tbsp": "8g"},
+      "butter": {"1_cup": "227g", "1_tbsp": "14g", "1_stick": "113g"},
+      "olive_oil": {"1_cup": "216g", "1_tbsp": "14g"},
+      "honey": {"1_cup": "340g", "1_tbsp": "21g"},
+      "milk": {"1_cup": "245g", "1_tbsp": "15g"},
+      "greek_yogurt": {"1_cup": "245g", "1_tbsp": "15g"},
+      "rolled_oats": {"1_cup": "80g", "1_tbsp": "5g"},
+      "quinoa": {"1_cup": "170g", "1_tbsp": "11g"},
+      "brown_rice": {"1_cup": "190g", "1_tbsp": "12g"},
+      "almonds": {"1_cup": "140g", "1_tbsp": "9g"},
+      "walnuts": {"1_cup": "120g", "1_tbsp": "8g"},
+      "chia_seeds": {"1_cup": "160g", "1_tbsp": "10g"},
+      "ground_flax_seeds": {"1_cup": "112g", "1_tbsp": "7g"}
+    }
+  },
+  "store_sections": {
+    "produce": {
+      "display_name": "Produce & Fresh Vegetables",
+      "order": 1,
+      "icon": "🥬",
+      "categories": ["vegetable", "fruit"],
+      "food_ids": ["food_015", "food_016", "food_017", "food_018", "food_020", "food_021", "food_022", "food_023", "food_035", "food_036", "food_037", "food_038", "food_039", "food_042", "food_043", "food_044", "food_045"],
+      "shopping_tips": "Shop produce first, check for freshness, store in refrigerator crisper"
+    },
+    "meat_seafood": {
+      "display_name": "Meat & Seafood",
+      "order": 2,
+      "icon": "🥩",
+      "categories": ["protein"],
+      "subcategories": ["poultry", "fish", "red_meat", "seafood"],
+      "food_ids": ["food_001", "food_002", "food_003", "food_004", "food_005", "food_046", "food_047", "food_048", "food_049", "food_050"],
+      "shopping_tips": "Check expiration dates, keep cold, shop last before checkout"
+    },
+    "dairy_eggs": {
+      "display_name": "Dairy & Eggs",
+      "order": 3,
+      "icon": "🥛",
+      "categories": ["dairy"],
+      "food_ids": ["food_007", "food_008", "food_009", "food_033", "food_034"],
+      "shopping_tips": "Check expiration dates, keep refrigerated, select from back for freshest"
+    },
+    "pantry_grains": {
+      "display_name": "Pantry & Grains",
+      "order": 4,
+      "icon": "🌾",
+      "categories": ["grain", "legume"],
+      "food_ids": ["food_010", "food_011", "food_012", "food_024", "food_025", "food_026"],
+      "shopping_tips": "Buy in bulk for savings, check for pests, store in airtight containers"
+    },
+    "nuts_seeds": {
+      "display_name": "Nuts, Seeds & Dried Goods",
+      "order": 5,
+      "icon": "🥜",
+      "categories": ["nut", "seed"],
+      "food_ids": ["food_027", "food_028", "food_029", "food_030"],
+      "shopping_tips": "Check for rancidity, buy from high-turnover stores, store in cool place"
+    },
+    "oils_condiments": {
+      "display_name": "Oils, Condiments & Seasonings",
+      "order": 6,
+      "icon": "🫒",
+      "categories": ["fat", "condiment"],
+      "food_ids": ["food_031", "food_032"],
+      "shopping_tips": "Check expiration dates on oils, store in cool dark place"
+    },
+    "frozen": {
+      "display_name": "Frozen Foods",
+      "order": 7,
+      "icon": "🧊",
+      "categories": ["frozen"],
+      "food_ids": [],
+      "shopping_tips": "Shop frozen section last, check for ice crystals, keep frozen until use"
+    },
+    "bakery": {
+      "display_name": "Bakery & Bread",
+      "order": 8,
+      "icon": "🍞",
+      "categories": ["bakery"],
+      "food_ids": [],
+      "shopping_tips": "Check freshness date, store bread at room temperature or freeze"
+    }
+  },
+  "ingredient_aliases": {
+    "chicken_breast": ["chicken breast", "grilled chicken breast", "chicken breast boneless", "chicken breast skinless"],
+    "salmon": ["salmon fillet", "grilled salmon", "salmon fillets", "atlantic salmon"],
+    "ground_turkey": ["turkey ground", "lean ground turkey", "ground turkey breast"],
+    "beef_sirloin": ["sirloin steak", "beef sirloin steak", "sirloin"],
+    "shrimp": ["prawns", "large shrimp", "medium shrimp", "cooked shrimp"],
+    "tofu": ["firm tofu", "extra firm tofu", "silken tofu"],
+    "greek_yogurt": ["greek style yogurt", "strained yogurt", "plain greek yogurt"],
+    "cottage_cheese": ["low fat cottage cheese", "small curd cottage cheese"],
+    "eggs": ["whole eggs", "large eggs", "chicken eggs", "hard boiled eggs", "fried egg"],
+    "quinoa": ["cooked quinoa", "tri-color quinoa", "white quinoa", "red quinoa"],
+    "brown_rice": ["cooked brown rice", "long grain brown rice", "short grain brown rice"],
+    "rolled_oats": ["old fashioned oats", "oatmeal", "quick oats"],
+    "sweet_potato": ["sweet potatoes", "roasted sweet potato", "baked sweet potato"],
+    "broccoli": ["steamed broccoli", "fresh broccoli", "broccoli florets"],
+    "spinach": ["baby spinach", "fresh spinach", "massaged kale"],
+    "kale": ["baby kale", "curly kale", "lacinato kale", "massaged kale"],
+    "bell_peppers": ["bell pepper", "sweet pepper", "red bell pepper", "yellow bell pepper", "grilled bell peppers"],
+    "carrots": ["baby carrots", "carrot sticks", "shredded carrots"],
+    "avocado": ["ripe avocado", "hass avocado"],
+    "blueberries": ["fresh blueberries", "wild blueberries"],
+    "strawberries": ["fresh strawberries", "sliced strawberries"],
+    "banana": ["ripe banana", "bananas"],
+    "apple": ["apples", "green apple", "red apple", "gala apple"],
+    "black_beans": ["canned black beans", "dried black beans", "cooked black beans"],
+    "chickpeas": ["garbanzo beans", "canned chickpeas", "cooked chickpeas", "roasted chickpeas"],
+    "red_lentils": ["dried red lentils", "cooked red lentils"],
+    "almonds": ["raw almonds", "sliced almonds", "chopped peanuts"],
+    "walnuts": ["raw walnuts", "chopped walnuts", "walnut pieces"],
+    "chia_seeds": ["black chia seeds", "white chia seeds"],
+    "ground_flax_seeds": ["flax seeds", "flaxseed meal", "whole flax seeds"],
+    "olive_oil": ["extra virgin olive oil", "light olive oil"],
+    "coconut_oil": ["virgin coconut oil", "refined coconut oil", "coconut milk"],
+    "mozzarella_cheese": ["fresh mozzarella", "part skim mozzarella", "cheese"],
+    "almond_milk": ["unsweetened almond milk", "vanilla almond milk"],
+    "mushrooms": ["button mushrooms", "cremini mushrooms", "portobello mushrooms", "sauteed mushrooms"],
+    "cherry_tomatoes": ["tomatoes", "grape tomatoes", "diced tomatoes", "sun-dried tomatoes", "large tomatoes", "marinara sauce"],
+    "cucumber": ["english cucumber", "persian cucumber"],
+    "zucchini": ["zucchini noodles", "grilled zucchini"],
+    "asparagus": ["fresh asparagus", "grilled asparagus"],
+    "cauliflower": ["cauliflower rice", "cauliflower florets"],
+    "brussels_sprouts": ["fresh brussels sprouts", "shaved brussels sprouts"],
+    "edamame": ["frozen edamame", "shelled edamame"],
+    "green_peas": ["frozen peas", "fresh peas", "snap peas"],
+    "sweet_corn": ["corn kernels", "frozen corn", "corn"],
+    "cod": ["cod fillet", "fresh cod"],
+    "tuna": ["canned tuna", "tuna steak", "albacore tuna"],
+    "lamb_leg": ["ground lamb", "lamb chops"],
+    "pork_tenderloin": ["pork loin", "pork chops"],
+    "turkey_breast": ["sliced turkey", "deli turkey"]
+  },
+  "substitutions": {
+    "chicken_breast": [
+      {
+        "substitute": "turkey_breast",
+        "ratio": "1:1",
+        "notes": "Similar cooking time and method",
+        "dietary_tags": ["lean_protein"],
+        "food_id": "food_050"
+      },
+      {
+        "substitute": "firm_tofu",
+        "ratio": "1:1",
+        "notes": "Press tofu well, marinate longer",
+        "dietary_tags": ["vegetarian", "vegan", "plant_protein"],
+        "food_id": "food_006"
+      }
+    ],
+    "salmon": [
+      {
+        "substitute": "cod",
+        "ratio": "1:1",
+        "notes": "Milder flavor, similar cooking methods",
+        "dietary_tags": ["lean_protein"],
+        "food_id": "food_046"
+      },
+      {
+        "substitute": "tuna",
+        "ratio": "1:1",
+        "notes": "Stronger flavor, rich in omega-3",
+        "dietary_tags": ["high_protein"],
+        "food_id": "food_047"
+      }
+    ],
+    "greek_yogurt": [
+      {
+        "substitute": "cottage_cheese",
+        "ratio": "1:1",
+        "notes": "Similar protein content, different texture",
+        "dietary_tags": ["high_protein"],
+        "food_id": "food_008"
+      },
+      {
+        "substitute": "almond_milk",
+        "ratio": "1:1",
+        "notes": "Lower protein, dairy-free option",
+        "dietary_tags": ["vegan", "dairy_free"],
+        "food_id": "food_034"
+      }
+    ],
+    "quinoa": [
+      {
+        "substitute": "brown_rice",
+        "ratio": "1:1",
+        "notes": "Lower protein, similar cooking method",
+        "dietary_tags": ["gluten_free"],
+        "food_id": "food_011"
+      },
+      {
+        "substitute": "cauliflower_rice",
+        "ratio": "1:1",
+        "notes": "Lower carb, different texture",
+        "dietary_tags": ["low_carb", "keto_friendly"],
+        "food_id": "food_041"
+      }
+    ],
+    "spinach": [
+      {
+        "substitute": "kale",
+        "ratio": "1:1",
+        "notes": "Massage kale if using raw, stronger flavor",
+        "dietary_tags": ["superfood"],
+        "food_id": "food_016"
+      },
+      {
+        "substitute": "arugula",
+        "ratio": "1:1",
+        "notes": "Peppery flavor, delicate texture",
+        "dietary_tags": ["leafy_green"],
+        "food_id": "food_015"
+      }
+    ],
+    "black_beans": [
+      {
+        "substitute": "chickpeas",
+        "ratio": "1:1",
+        "notes": "Nuttier flavor, similar protein content",
+        "dietary_tags": ["plant_protein", "high_fiber"],
+        "food_id": "food_025"
+      },
+      {
+        "substitute": "red_lentils",
+        "ratio": "1:1",
+        "notes": "Cook faster, mushier texture",
+        "dietary_tags": ["plant_protein", "high_fiber"],
+        "food_id": "food_026"
+      }
+    ],
+    "almond_milk": [
+      {
+        "substitute": "oat_milk",
+        "ratio": "1:1",
+        "notes": "Creamier texture, slightly sweet",
+        "dietary_tags": ["vegan", "dairy_free"],
+        "food_id": "food_034"
+      },
+      {
+        "substitute": "regular_milk",
+        "ratio": "1:1",
+        "notes": "Higher protein, contains dairy",
+        "dietary_tags": ["high_protein"],
+        "food_id": "food_034"
+      }
+    ],
+    "olive_oil": [
+      {
+        "substitute": "coconut_oil",
+        "ratio": "1:1",
+        "notes": "Higher saturated fat, solid at room temp",
+        "dietary_tags": ["vegan", "paleo"],
+        "food_id": "food_032"
+      },
+      {
+        "substitute": "avocado_oil",
+        "ratio": "1:1",
+        "notes": "Higher smoke point, neutral flavor",
+        "dietary_tags": ["heart_healthy"],
+        "food_id": "food_031"
+      }
+    ],
+    "butter": [
+      {
+        "substitute": "olive_oil",
+        "ratio": "0.75:1",
+        "notes": "Use 3/4 the amount, liquid fat",
+        "dietary_tags": ["vegan", "dairy_free"],
+        "food_id": "food_031"
+      },
+      {
+        "substitute": "coconut_oil",
+        "ratio": "1:1",
+        "notes": "Similar consistency when solid",
+        "dietary_tags": ["vegan", "dairy_free", "paleo"],
+        "food_id": "food_032"
+      }
+    ],
+    "almonds": [
+      {
+        "substitute": "walnuts",
+        "ratio": "1:1",
+        "notes": "Higher omega-3, softer texture",
+        "dietary_tags": ["brain_healthy"],
+        "food_id": "food_028"
+      },
+      {
+        "substitute": "sunflower_seeds",
+        "ratio": "1:1",
+        "notes": "Nut-free option, similar crunch",
+        "dietary_tags": ["nut_free"],
+        "food_id": "food_029"
+      }
+    ]
+  },
+  "dietary_substitutions": {
+    "vegan": {
+      "chicken_breast": ["firm_tofu", "tempeh", "seitan"],
+      "salmon": ["marinated_tofu", "hearts_of_palm"],
+      "eggs": ["flax_egg", "chia_egg", "aquafaba"],
+      "greek_yogurt": ["coconut_yogurt", "almond_yogurt"],
+      "cheese": ["nutritional_yeast", "cashew_cheese"],
+      "butter": ["olive_oil", "coconut_oil", "vegan_butter"],
+      "milk": ["almond_milk", "oat_milk", "soy_milk"]
+    },
+    "gluten_free": {
+      "wheat_flour": ["almond_flour", "rice_flour", "gluten_free_flour"],
+      "bread": ["gluten_free_bread", "lettuce_wraps"],
+      "pasta": ["rice_pasta", "quinoa_pasta", "zucchini_noodles"],
+      "soy_sauce": ["tamari", "coconut_aminos"]
+    },
+    "keto_friendly": {
+      "quinoa": ["cauliflower_rice"],
+      "brown_rice": ["cauliflower_rice"],
+      "sweet_potato": ["turnips", "radishes"],
+      "banana": ["berries", "avocado"],
+      "oats": ["chia_seeds", "hemp_seeds"]
+    },
+    "dairy_free": {
+      "milk": ["almond_milk", "oat_milk", "coconut_milk"],
+      "greek_yogurt": ["coconut_yogurt"],
+      "cheese": ["nutritional_yeast", "dairy_free_cheese"],
+      "butter": ["olive_oil", "coconut_oil"]
+    },
+    "nut_free": {
+      "almonds": ["sunflower_seeds", "pumpkin_seeds"],
+      "almond_milk": ["oat_milk", "rice_milk"],
+      "almond_butter": ["sunflower_seed_butter", "soy_butter"],
+      "walnuts": ["sunflower_seeds", "hemp_seeds"]
+    }
+  },
+  "shopping_optimization": {
+    "seasonal_availability": {
+      "strawberries": {
+        "peak_season": ["April", "May", "June"],
+        "off_season_alternatives": ["frozen_strawberries", "raspberries", "blueberries"]
+      },
+      "blueberries": {
+        "peak_season": ["June", "July", "August"],
+        "off_season_alternatives": ["frozen_blueberries", "blackberries"]
+      },
+      "asparagus": {
+        "peak_season": ["March", "April", "May"],
+        "off_season_alternatives": ["broccoli", "green_beans"]
+      },
+      "brussels_sprouts": {
+        "peak_season": ["October", "November", "December", "January"],
+        "off_season_alternatives": ["cabbage", "broccoli"]
+      },
+      "sweet_corn": {
+        "peak_season": ["July", "August", "September"],
+        "off_season_alternatives": ["frozen_corn", "bell_peppers"]
+      }
+    },
+    "storage_tips": {
+      "produce": {
+        "refrigerate": ["spinach", "kale", "broccoli", "carrots", "bell_peppers", "cucumber"],
+        "counter_ripen": ["banana", "avocado", "tomatoes"],
+        "cool_dark_place": ["sweet_potato", "onions"],
+        "freeze_friendly": ["berries", "spinach", "corn"]
+      },
+      "proteins": {
+        "refrigerate_immediately": ["chicken_breast", "salmon", "ground_turkey", "eggs"],
+        "freeze_for_longterm": ["beef_sirloin", "pork_tenderloin", "lamb"],
+        "pantry_stable": ["canned_tuna"]
+      },
+      "pantry": {
+        "airtight_containers": ["quinoa", "brown_rice", "oats", "nuts", "seeds"],
+        "cool_dry_place": ["beans", "lentils", "oils"],
+        "refrigerate_after_opening": ["nut_butters", "oils"]
+      }
+    },
+    "bulk_buying_recommendations": {
+      "cost_effective": ["quinoa", "brown_rice", "oats", "nuts", "seeds", "dried_beans", "lentils"],
+      "portion_considerations": ["fresh_produce", "dairy", "proteins"],
+      "freezer_friendly": ["berries", "spinach", "ground_meats", "bread"]
+    }
+  },
+  "recipe_scaling": {
+    "common_fractions": {
+      "half": 0.5,
+      "third": 0.33,
+      "quarter": 0.25,
+      "double": 2.0,
+      "triple": 3.0
+    },
+    "serving_adjustments": {
+      "1_to_2_people": 1.5,
+      "1_to_4_people": 3.0,
+      "2_to_4_people": 2.0,
+      "4_to_6_people": 1.5,
+      "4_to_8_people": 2.0
+    },
+    "minimum_quantities": {
+      "spices": "1/8_tsp",
+      "baking_powder": "1/4_tsp",
+      "salt": "pinch",
+      "vanilla": "1/4_tsp"
+    }
+  },
+  "list_organization_preferences": {
+    "default_grouping": "store_section",
+    "alternative_groupings": ["meal_type", "recipe", "alphabetical", "preparation_order"],
+    "quantity_display": {
+      "format": "metric_first",
+      "round_to": "nearest_quarter",
+      "combine_small_amounts": true
+    },
+    "notes_and_tips": {
+      "include_storage_tips": true,
+      "include_substitution_notes": true,
+      "include_prep_notes": true
+    }
+  }
+}

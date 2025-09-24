@@ -1,0 +1,775 @@
+{
+  "meal_suggestions": [
+    {
+      "id": "meal_001",
+      "name": "Greek Yogurt Berry Parfait",
+      "calories": 245,
+      "meal_type": ["breakfast", "snack"],
+      "prep_time": 5,
+      "components": [
+        {"food_id": "food_007", "name": "Greek yogurt", "amount": 150, "unit": "g"},
+        {"food_id": "food_020", "name": "blueberries", "amount": 80, "unit": "g"},
+        {"food_id": "food_027", "name": "almonds", "amount": 15, "unit": "g"}
+      ],
+      "nutrition": {"protein": 18, "carbs": 24, "fat": 9, "fiber": 5},
+      "dietary_tags": ["vegetarian", "gluten_free", "high_protein"]
+    },
+    {
+      "id": "meal_002",
+      "name": "Grilled Chicken Salad Bowl",
+      "calories": 385,
+      "meal_type": ["lunch", "dinner"],
+      "prep_time": 15,
+      "components": [
+        {"food_id": "food_001", "name": "grilled chicken breast", "amount": 120, "unit": "g"},
+        {"food_id": "food_015", "name": "spinach", "amount": 100, "unit": "g"},
+        {"food_id": "food_036", "name": "cherry tomatoes", "amount": 80, "unit": "g"},
+        {"food_id": "food_037", "name": "cucumber", "amount": 60, "unit": "g"},
+        {"food_id": "food_019", "name": "avocado", "amount": 40, "unit": "g"},
+        {"food_id": "food_031", "name": "olive oil", "amount": 10, "unit": "ml"}
+      ],
+      "nutrition": {"protein": 32, "carbs": 12, "fat": 18, "fiber": 8},
+      "dietary_tags": ["gluten_free", "high_protein", "low_carb", "healthy_fats"]
+    },
+    {
+      "id": "meal_003",
+      "name": "Quinoa Power Bowl",
+      "calories": 465,
+      "meal_type": ["lunch", "dinner"],
+      "prep_time": 25,
+      "components": [
+        {"food_id": "food_010", "name": "cooked quinoa", "amount": 150, "unit": "g"},
+        {"food_id": "food_001", "name": "grilled chicken", "amount": 100, "unit": "g"},
+        {"food_id": "food_014", "name": "steamed broccoli", "amount": 100, "unit": "g"},
+        {"food_id": "food_013", "name": "roasted sweet potato", "amount": 80, "unit": "g"},
+        {"food_id": "food_019", "name": "avocado", "amount": 30, "unit": "g"}
+      ],
+      "nutrition": {"protein": 35, "carbs": 48, "fat": 12, "fiber": 10},
+      "dietary_tags": ["gluten_free", "high_protein", "complete_meal", "nutrient_dense"]
+    },
+    {
+      "id": "meal_004",
+      "name": "Salmon Teriyaki Bowl",
+      "calories": 420,
+      "meal_type": ["dinner"],
+      "prep_time": 20,
+      "components": [
+        {"food_id": "food_002", "name": "grilled salmon", "amount": 120, "unit": "g"},
+        {"food_id": "food_011", "name": "brown rice", "amount": 150, "unit": "g"},
+        {"food_id": "food_014", "name": "steamed broccoli", "amount": 100, "unit": "g"},
+        {"food_id": "food_043", "name": "edamame", "amount": 50, "unit": "g"}
+      ],
+      "nutrition": {"protein": 38, "carbs": 42, "fat": 16, "fiber": 8},
+      "dietary_tags": ["omega_3", "high_protein", "heart_healthy", "gluten_free"]
+    },
+    {
+      "id": "meal_005",
+      "name": "Veggie Scramble",
+      "calories": 320,
+      "meal_type": ["breakfast", "lunch"],
+      "prep_time": 12,
+      "components": [
+        {"food_id": "food_009", "name": "whole eggs", "amount": 120, "unit": "g"},
+        {"food_id": "food_015", "name": "spinach", "amount": 60, "unit": "g"},
+        {"food_id": "food_035", "name": "mushrooms", "amount": 80, "unit": "g"},
+        {"food_id": "food_017", "name": "bell peppers", "amount": 60, "unit": "g"},
+        {"food_id": "food_031", "name": "olive oil", "amount": 8, "unit": "ml"}
+      ],
+      "nutrition": {"protein": 18, "carbs": 8, "fat": 24, "fiber": 4},
+      "dietary_tags": ["vegetarian", "keto_friendly", "low_carb", "high_protein"]
+    },
+    {
+      "id": "meal_006",
+      "name": "Black Bean Taco Bowl",
+      "calories": 380,
+      "meal_type": ["lunch", "dinner"],
+      "prep_time": 15,
+      "components": [
+        {"food_id": "food_024", "name": "black beans", "amount": 150, "unit": "g"},
+        {"food_id": "food_011", "name": "brown rice", "amount": 100, "unit": "g"},
+        {"food_id": "food_019", "name": "avocado", "amount": 60, "unit": "g"},
+        {"food_id": "food_036", "name": "diced tomatoes", "amount": 80, "unit": "g"},
+        {"food_id": "food_045", "name": "corn", "amount": 60, "unit": "g"}
+      ],
+      "nutrition": {"protein": 16, "carbs": 55, "fat": 12, "fiber": 18},
+      "dietary_tags": ["vegetarian", "vegan", "high_fiber", "plant_protein"]
+    },
+    {
+      "id": "meal_007",
+      "name": "Turkey and Avocado Wrap",
+      "calories": 350,
+      "meal_type": ["lunch"],
+      "prep_time": 8,
+      "components": [
+        {"food_id": "food_050", "name": "turkey breast", "amount": 80, "unit": "g"},
+        {"food_id": "food_019", "name": "avocado", "amount": 50, "unit": "g"},
+        {"food_id": "food_015", "name": "spinach", "amount": 30, "unit": "g"},
+        {"food_id": "food_036", "name": "tomato", "amount": 60, "unit": "g"}
+      ],
+      "nutrition": {"protein": 26, "carbs": 28, "fat": 14, "fiber": 8},
+      "dietary_tags": ["lean_protein", "portable", "balanced_meal"]
+    },
+    {
+      "id": "meal_008",
+      "name": "Chia Pudding",
+      "calories": 280,
+      "meal_type": ["breakfast", "snack"],
+      "prep_time": 5,
+      "components": [
+        {"food_id": "food_029", "name": "chia seeds", "amount": 25, "unit": "g"},
+        {"food_id": "food_034", "name": "almond milk", "amount": 250, "unit": "ml"},
+        {"food_id": "food_021", "name": "strawberries", "amount": 80, "unit": "g"},
+        {"food_id": "food_027", "name": "almonds", "amount": 15, "unit": "g"}
+      ],
+      "nutrition": {"protein": 8, "carbs": 22, "fat": 18, "fiber": 12},
+      "dietary_tags": ["vegan", "omega_3", "high_fiber", "make_ahead"]
+    },
+    {
+      "id": "meal_009",
+      "name": "Lentil Soup Bowl",
+      "calories": 310,
+      "meal_type": ["lunch", "dinner"],
+      "prep_time": 30,
+      "components": [
+        {"food_id": "food_026", "name": "red lentils", "amount": 150, "unit": "g"},
+        {"food_id": "food_018", "name": "carrots", "amount": 80, "unit": "g"},
+        {"food_id": "food_015", "name": "spinach", "amount": 60, "unit": "g"},
+        {"food_id": "food_036", "name": "tomatoes", "amount": 100, "unit": "g"}
+      ],
+      "nutrition": {"protein": 18, "carbs": 45, "fat": 3, "fiber": 15},
+      "dietary_tags": ["vegan", "high_protein", "high_fiber", "iron_rich"]
+    },
+    {
+      "id": "meal_010",
+      "name": "Tuna Salad Stuffed Avocado",
+      "calories": 340,
+      "meal_type": ["lunch"],
+      "prep_time": 10,
+      "components": [
+        {"food_id": "food_047", "name": "tuna", "amount": 100, "unit": "g"},
+        {"food_id": "food_019", "name": "avocado", "amount": 120, "unit": "g"},
+        {"food_id": "food_037", "name": "cucumber", "amount": 50, "unit": "g"},
+        {"food_id": "food_036", "name": "cherry tomatoes", "amount": 60, "unit": "g"}
+      ],
+      "nutrition": {"protein": 28, "carbs": 12, "fat": 22, "fiber": 12},
+      "dietary_tags": ["keto_friendly", "omega_3", "high_protein", "low_carb"]
+    },
+    {
+      "id": "meal_011",
+      "name": "Oatmeal with Berries",
+      "calories": 290,
+      "meal_type": ["breakfast"],
+      "prep_time": 8,
+      "components": [
+        {"food_id": "food_012", "name": "rolled oats", "amount": 50, "unit": "g"},
+        {"food_id": "food_020", "name": "blueberries", "amount": 80, "unit": "g"},
+        {"food_id": "food_021", "name": "strawberries", "amount": 60, "unit": "g"},
+        {"food_id": "food_028", "name": "walnuts", "amount": 15, "unit": "g"}
+      ],
+      "nutrition": {"protein": 10, "carbs": 48, "fat": 12, "fiber": 10},
+      "dietary_tags": ["heart_healthy", "high_fiber", "antioxidant_rich", "vegetarian"]
+    },
+    {
+      "id": "meal_012",
+      "name": "Chickpea Curry",
+      "calories": 365,
+      "meal_type": ["dinner"],
+      "prep_time": 25,
+      "components": [
+        {"food_id": "food_025", "name": "chickpeas", "amount": 150, "unit": "g"},
+        {"food_id": "food_015", "name": "spinach", "amount": 100, "unit": "g"},
+        {"food_id": "food_036", "name": "tomatoes", "amount": 120, "unit": "g"},
+        {"food_id": "food_032", "name": "coconut oil", "amount": 8, "unit": "ml"}
+      ],
+      "nutrition": {"protein": 16, "carbs": 52, "fat": 12, "fiber": 16},
+      "dietary_tags": ["vegan", "high_protein", "high_fiber", "indian_inspired"]
+    },
+    {
+      "id": "meal_013",
+      "name": "Cottage Cheese Bowl",
+      "calories": 250,
+      "meal_type": ["breakfast", "snack"],
+      "prep_time": 5,
+      "components": [
+        {"food_id": "food_008", "name": "cottage cheese", "amount": 150, "unit": "g"},
+        {"food_id": "food_022", "name": "banana", "amount": 80, "unit": "g"},
+        {"food_id": "food_030", "name": "ground flax seeds", "amount": 10, "unit": "g"},
+        {"food_id": "food_027", "name": "almonds", "amount": 10, "unit": "g"}
+      ],
+      "nutrition": {"protein": 20, "carbs": 24, "fat": 8, "fiber": 6},
+      "dietary_tags": ["high_protein", "omega_3", "probiotic", "vegetarian"]
+    },
+    {
+      "id": "meal_014",
+      "name": "Shrimp Stir Fry",
+      "calories": 285,
+      "meal_type": ["lunch", "dinner"],
+      "prep_time": 12,
+      "components": [
+        {"food_id": "food_005", "name": "shrimp", "amount": 150, "unit": "g"},
+        {"food_id": "food_014", "name": "broccoli", "amount": 100, "unit": "g"},
+        {"food_id": "food_017", "name": "bell peppers", "amount": 80, "unit": "g"},
+        {"food_id": "food_031", "name": "olive oil", "amount": 8, "unit": "ml"}
+      ],
+      "nutrition": {"protein": 32, "carbs": 12, "fat": 12, "fiber": 6},
+      "dietary_tags": ["low_calorie", "high_protein", "quick_cook", "gluten_free"]
+    },
+    {
+      "id": "meal_015",
+      "name": "Caprese Salad",
+      "calories": 220,
+      "meal_type": ["lunch", "snack"],
+      "prep_time": 5,
+      "components": [
+        {"food_id": "food_033", "name": "mozzarella cheese", "amount": 60, "unit": "g"},
+        {"food_id": "food_036", "name": "tomatoes", "amount": 150, "unit": "g"},
+        {"food_id": "food_031", "name": "olive oil", "amount": 10, "unit": "ml"}
+      ],
+      "nutrition": {"protein": 16, "carbs": 8, "fat": 16, "fiber": 3},
+      "dietary_tags": ["vegetarian", "keto_friendly", "italian_inspired", "fresh"]
+    },
+    {
+      "id": "meal_016",
+      "name": "Beef and Vegetable Stir Fry",
+      "calories": 395,
+      "meal_type": ["dinner"],
+      "prep_time": 15,
+      "components": [
+        {"food_id": "food_004", "name": "beef sirloin", "amount": 120, "unit": "g"},
+        {"food_id": "food_014", "name": "broccoli", "amount": 100, "unit": "g"},
+        {"food_id": "food_018", "name": "carrots", "amount": 80, "unit": "g"},
+        {"food_id": "food_017", "name": "bell peppers", "amount": 80, "unit": "g"},
+        {"food_id": "food_011", "name": "brown rice", "amount": 80, "unit": "g"}
+      ],
+      "nutrition": {"protein": 35, "carbs": 28, "fat": 18, "fiber": 8},
+      "dietary_tags": ["high_protein", "iron_rich", "balanced_meal", "gluten_free"]
+    },
+    {
+      "id": "meal_017",
+      "name": "Smoothie Bowl",
+      "calories": 315,
+      "meal_type": ["breakfast"],
+      "prep_time": 8,
+      "components": [
+        {"food_id": "food_022", "name": "banana", "amount": 100, "unit": "g"},
+        {"food_id": "food_020", "name": "blueberries", "amount": 80, "unit": "g"},
+        {"food_id": "food_015", "name": "spinach", "amount": 30, "unit": "g"},
+        {"food_id": "food_007", "name": "greek yogurt", "amount": 100, "unit": "g"},
+        {"food_id": "food_029", "name": "chia seeds", "amount": 10, "unit": "g"}
+      ],
+      "nutrition": {"protein": 16, "carbs": 38, "fat": 8, "fiber": 10},
+      "dietary_tags": ["antioxidant_rich", "probiotic", "nutrient_dense", "vegetarian"]
+    },
+    {
+      "id": "meal_018",
+      "name": "Stuffed Bell Peppers",
+      "calories": 340,
+      "meal_type": ["dinner"],
+      "prep_time": 35,
+      "components": [
+        {"food_id": "food_003", "name": "ground turkey", "amount": 100, "unit": "g"},
+        {"food_id": "food_010", "name": "quinoa", "amount": 80, "unit": "g"},
+        {"food_id": "food_017", "name": "bell peppers", "amount": 150, "unit": "g"},
+        {"food_id": "food_036", "name": "diced tomatoes", "amount": 60, "unit": "g"},
+        {"food_id": "food_033", "name": "cheese", "amount": 20, "unit": "g"}
+      ],
+      "nutrition": {"protein": 28, "carbs": 32, "fat": 10, "fiber": 8},
+      "dietary_tags": ["lean_protein", "complete_meal", "gluten_free", "vitamin_rich"]
+    },
+    {
+      "id": "meal_019",
+      "name": "Asian Lettuce Wraps",
+      "calories": 260,
+      "meal_type": ["lunch", "dinner"],
+      "prep_time": 12,
+      "components": [
+        {"food_id": "food_003", "name": "ground turkey", "amount": 120, "unit": "g"},
+        {"food_id": "food_035", "name": "mushrooms", "amount": 80, "unit": "g"},
+        {"food_id": "food_018", "name": "carrots", "amount": 40, "unit": "g"},
+        {"food_id": "food_028", "name": "chopped peanuts", "amount": 15, "unit": "g"}
+      ],
+      "nutrition": {"protein": 28, "carbs": 12, "fat": 14, "fiber": 6},
+      "dietary_tags": ["low_carb", "gluten_free", "asian_inspired", "lean_protein"]
+    },
+    {
+      "id": "meal_020",
+      "name": "Mediterranean Quinoa Salad",
+      "calories": 385,
+      "meal_type": ["lunch"],
+      "prep_time": 15,
+      "components": [
+        {"food_id": "food_010", "name": "quinoa", "amount": 120, "unit": "g"},
+        {"food_id": "food_037", "name": "cucumber", "amount": 100, "unit": "g"},
+        {"food_id": "food_036", "name": "cherry tomatoes", "amount": 80, "unit": "g"},
+        {"food_id": "food_033", "name": "feta cheese", "amount": 40, "unit": "g"},
+        {"food_id": "food_031", "name": "olive oil", "amount": 12, "unit": "ml"}
+      ],
+      "nutrition": {"protein": 14, "carbs": 42, "fat": 18, "fiber": 8},
+      "dietary_tags": ["vegetarian", "mediterranean", "make_ahead", "gluten_free"]
+    },
+    {
+      "id": "meal_021",
+      "name": "Protein Pancakes",
+      "calories": 295,
+      "meal_type": ["breakfast"],
+      "prep_time": 10,
+      "components": [
+        {"food_id": "food_009", "name": "eggs", "amount": 100, "unit": "g"},
+        {"food_id": "food_022", "name": "banana", "amount": 80, "unit": "g"},
+        {"food_id": "food_012", "name": "oats", "amount": 30, "unit": "g"},
+        {"food_id": "food_020", "name": "blueberries", "amount": 60, "unit": "g"}
+      ],
+      "nutrition": {"protein": 18, "carbs": 32, "fat": 10, "fiber": 6},
+      "dietary_tags": ["high_protein", "gluten_free", "natural_sweetness", "vegetarian"]
+    },
+    {
+      "id": "meal_022",
+      "name": "Cod with Roasted Vegetables",
+      "calories": 285,
+      "meal_type": ["dinner"],
+      "prep_time": 25,
+      "components": [
+        {"food_id": "food_046", "name": "cod fillet", "amount": 150, "unit": "g"},
+        {"food_id": "food_014", "name": "broccoli", "amount": 100, "unit": "g"},
+        {"food_id": "food_018", "name": "carrots", "amount": 80, "unit": "g"},
+        {"food_id": "food_013", "name": "sweet potato", "amount": 100, "unit": "g"},
+        {"food_id": "food_031", "name": "olive oil", "amount": 8, "unit": "ml"}
+      ],
+      "nutrition": {"protein": 32, "carbs": 28, "fat": 8, "fiber": 8},
+      "dietary_tags": ["lean_protein", "omega_3", "colorful_plate", "gluten_free"]
+    },
+    {
+      "id": "meal_023",
+      "name": "Tofu Scramble",
+      "calories": 280,
+      "meal_type": ["breakfast", "lunch"],
+      "prep_time": 10,
+      "components": [
+        {"food_id": "food_006", "name": "firm tofu", "amount": 120, "unit": "g"},
+        {"food_id": "food_015", "name": "spinach", "amount": 60, "unit": "g"},
+        {"food_id": "food_035", "name": "mushrooms", "amount": 80, "unit": "g"},
+        {"food_id": "food_036", "name": "tomatoes", "amount": 60, "unit": "g"},
+        {"food_id": "food_031", "name": "olive oil", "amount": 8, "unit": "ml"}
+      ],
+      "nutrition": {"protein": 22, "carbs": 12, "fat": 18, "fiber": 6},
+      "dietary_tags": ["vegan", "high_protein", "calcium_rich", "plant_based"]
+    },
+    {
+      "id": "meal_024",
+      "name": "Apple Walnut Salad",
+      "calories": 305,
+      "meal_type": ["lunch", "snack"],
+      "prep_time": 8,
+      "components": [
+        {"food_id": "food_023", "name": "apple", "amount": 120, "unit": "g"},
+        {"food_id": "food_028", "name": "walnuts", "amount": 25, "unit": "g"},
+        {"food_id": "food_015", "name": "spinach", "amount": 80, "unit": "g"},
+        {"food_id": "food_033", "name": "goat cheese", "amount": 30, "unit": "g"}
+      ],
+      "nutrition": {"protein": 12, "carbs": 22, "fat": 22, "fiber": 8},
+      "dietary_tags": ["vegetarian", "omega_3", "brain_healthy", "fiber_rich"]
+    },
+    {
+      "id": "meal_025",
+      "name": "Lamb and Vegetable Skewers",
+      "calories": 395,
+      "meal_type": ["dinner"],
+      "prep_time": 20,
+      "components": [
+        {"food_id": "food_048", "name": "lamb leg", "amount": 120, "unit": "g"},
+        {"food_id": "food_017", "name": "bell peppers", "amount": 100, "unit": "g"},
+        {"food_id": "food_038", "name": "zucchini", "amount": 100, "unit": "g"},
+        {"food_id": "food_036", "name": "cherry tomatoes", "amount": 80, "unit": "g"},
+        {"food_id": "food_031", "name": "olive oil", "amount": 8, "unit": "ml"}
+      ],
+      "nutrition": {"protein": 32, "carbs": 15, "fat": 26, "fiber": 6},
+      "dietary_tags": ["high_protein", "mediterranean", "grilled", "gluten_free"]
+    },
+    {
+      "id": "meal_026",
+      "name": "Green Smoothie",
+      "calories": 220,
+      "meal_type": ["breakfast", "snack"],
+      "prep_time": 5,
+      "components": [
+        {"food_id": "food_015", "name": "spinach", "amount": 60, "unit": "g"},
+        {"food_id": "food_022", "name": "banana", "amount": 80, "unit": "g"},
+        {"food_id": "food_023", "name": "apple", "amount": 80, "unit": "g"},
+        {"food_id": "food_030", "name": "flax seeds", "amount": 10, "unit": "g"},
+        {"food_id": "food_027", "name": "almonds", "amount": 15, "unit": "g"}
+      ],
+      "nutrition": {"protein": 8, "carbs": 28, "fat": 12, "fiber": 10},
+      "dietary_tags": ["vegan", "detoxifying", "fiber_rich", "omega_3"]
+    },
+    {
+      "id": "meal_027",
+      "name": "Pork Tenderloin with Vegetables",
+      "calories": 355,
+      "meal_type": ["dinner"],
+      "prep_time": 30,
+      "components": [
+        {"food_id": "food_049", "name": "pork tenderloin", "amount": 120, "unit": "g"},
+        {"food_id": "food_039", "name": "asparagus", "amount": 150, "unit": "g"},
+        {"food_id": "food_013", "name": "sweet potato", "amount": 100, "unit": "g"},
+        {"food_id": "food_031", "name": "olive oil", "amount": 8, "unit": "ml"}
+      ],
+      "nutrition": {"protein": 35, "carbs": 28, "fat": 12, "fiber": 8},
+      "dietary_tags": ["lean_protein", "thiamine_rich", "balanced_plate", "gluten_free"]
+    },
+    {
+      "id": "meal_028",
+      "name": "Cauliflower Rice Bowl",
+      "calories": 265,
+      "meal_type": ["lunch", "dinner"],
+      "prep_time": 12,
+      "components": [
+        {"food_id": "food_041", "name": "cauliflower rice", "amount": 150, "unit": "g"},
+        {"food_id": "food_025", "name": "chickpeas", "amount": 100, "unit": "g"},
+        {"food_id": "food_014", "name": "broccoli", "amount": 80, "unit": "g"},
+        {"food_id": "food_019", "name": "avocado", "amount": 40, "unit": "g"},
+        {"food_id": "food_029", "name": "hemp seeds", "amount": 10, "unit": "g"}
+      ],
+      "nutrition": {"protein": 14, "carbs": 28, "fat": 12, "fiber": 16},
+      "dietary_tags": ["vegan", "low_carb", "high_fiber", "plant_protein"]
+    },
+    {
+      "id": "meal_029",
+      "name": "Brussels Sprouts Salad",
+      "calories": 290,
+      "meal_type": ["lunch", "side"],
+      "prep_time": 10,
+      "components": [
+        {"food_id": "food_042", "name": "brussels sprouts", "amount": 150, "unit": "g"},
+        {"food_id": "food_027", "name": "almonds", "amount": 25, "unit": "g"},
+        {"food_id": "food_023", "name": "apple", "amount": 60, "unit": "g"},
+        {"food_id": "food_033", "name": "parmesan cheese", "amount": 20, "unit": "g"},
+        {"food_id": "food_031", "name": "olive oil", "amount": 10, "unit": "ml"}
+      ],
+      "nutrition": {"protein": 12, "carbs": 22, "fat": 20, "fiber": 10},
+      "dietary_tags": ["vegetarian", "cruciferous", "vitamin_rich", "crunchy"]
+    },
+    {
+      "id": "meal_030",
+      "name": "Green Pea Soup",
+      "calories": 240,
+      "meal_type": ["lunch", "dinner"],
+      "prep_time": 20,
+      "components": [
+        {"food_id": "food_044", "name": "green peas", "amount": 200, "unit": "g"},
+        {"food_id": "food_015", "name": "spinach", "amount": 50, "unit": "g"},
+        {"food_id": "food_031", "name": "olive oil", "amount": 8, "unit": "ml"},
+        {"food_id": "food_007", "name": "greek yogurt", "amount": 30, "unit": "g"}
+      ],
+      "nutrition": {"protein": 14, "carbs": 32, "fat": 8, "fiber": 12},
+      "dietary_tags": ["vegetarian", "protein_rich", "vitamin_rich", "comfort_food"]
+    },
+    {
+      "id": "meal_031",
+      "name": "Corn and Black Bean Salad",
+      "calories": 315,
+      "meal_type": ["lunch", "side"],
+      "prep_time": 10,
+      "components": [
+        {"food_id": "food_045", "name": "sweet corn", "amount": 120, "unit": "g"},
+        {"food_id": "food_024", "name": "black beans", "amount": 100, "unit": "g"},
+        {"food_id": "food_017", "name": "red bell pepper", "amount": 60, "unit": "g"},
+        {"food_id": "food_019", "name": "avocado", "amount": 50, "unit": "g"},
+        {"food_id": "food_031", "name": "olive oil", "amount": 8, "unit": "ml"}
+      ],
+      "nutrition": {"protein": 12, "carbs": 45, "fat": 12, "fiber": 14},
+      "dietary_tags": ["vegan", "colorful", "fiber_rich", "southwestern"]
+    },
+    {
+      "id": "meal_032",
+      "name": "Egg Salad Lettuce Cups",
+      "calories": 285,
+      "meal_type": ["lunch", "snack"],
+      "prep_time": 8,
+      "components": [
+        {"food_id": "food_009", "name": "hard boiled eggs", "amount": 120, "unit": "g"},
+        {"food_id": "food_019", "name": "avocado", "amount": 40, "unit": "g"},
+        {"food_id": "food_037", "name": "cucumber", "amount": 60, "unit": "g"},
+        {"food_id": "food_015", "name": "spinach", "amount": 40, "unit": "g"}
+      ],
+      "nutrition": {"protein": 18, "carbs": 8, "fat": 22, "fiber": 6},
+      "dietary_tags": ["keto_friendly", "high_protein", "low_carb", "vegetarian"]
+    },
+    {
+      "id": "meal_033",
+      "name": "Mediterranean Fish Bowl",
+      "calories": 395,
+      "meal_type": ["dinner"],
+      "prep_time": 18,
+      "components": [
+        {"food_id": "food_046", "name": "cod", "amount": 150, "unit": "g"},
+        {"food_id": "food_010", "name": "quinoa", "amount": 100, "unit": "g"},
+        {"food_id": "food_036", "name": "cherry tomatoes", "amount": 100, "unit": "g"},
+        {"food_id": "food_037", "name": "cucumber", "amount": 80, "unit": "g"},
+        {"food_id": "food_031", "name": "olive oil", "amount": 12, "unit": "ml"}
+      ],
+      "nutrition": {"protein": 32, "carbs": 35, "fat": 14, "fiber": 6},
+      "dietary_tags": ["mediterranean", "omega_3", "lean_protein", "gluten_free"]
+    },
+    {
+      "id": "meal_034",
+      "name": "Sweet Potato and Kale Hash",
+      "calories": 320,
+      "meal_type": ["breakfast", "lunch"],
+      "prep_time": 15,
+      "components": [
+        {"food_id": "food_013", "name": "sweet potato", "amount": 150, "unit": "g"},
+        {"food_id": "food_016", "name": "kale", "amount": 80, "unit": "g"},
+        {"food_id": "food_009", "name": "fried egg", "amount": 60, "unit": "g"},
+        {"food_id": "food_031", "name": "olive oil", "amount": 8, "unit": "ml"}
+      ],
+      "nutrition": {"protein": 12, "carbs": 38, "fat": 14, "fiber": 8},
+      "dietary_tags": ["vegetarian", "vitamin_a_rich", "superfood", "comfort_food"]
+    },
+    {
+      "id": "meal_035",
+      "name": "Asian Sesame Noodles",
+      "calories": 380,
+      "meal_type": ["lunch", "dinner"],
+      "prep_time": 12,
+      "components": [
+        {"food_id": "food_038", "name": "zucchini noodles", "amount": 200, "unit": "g"},
+        {"food_id": "food_006", "name": "tofu", "amount": 100, "unit": "g"},
+        {"food_id": "food_043", "name": "edamame", "amount": 60, "unit": "g"},
+        {"food_id": "food_018", "name": "carrots", "amount": 60, "unit": "g"},
+        {"food_id": "food_028", "name": "sesame seeds", "amount": 10, "unit": "g"}
+      ],
+      "nutrition": {"protein": 24, "carbs": 22, "fat": 20, "fiber": 8},
+      "dietary_tags": ["vegan", "asian_inspired", "plant_protein", "low_carb"]
+    },
+    {
+      "id": "meal_036",
+      "name": "Turkey Meatball Marinara",
+      "calories": 355,
+      "meal_type": ["dinner"],
+      "prep_time": 25,
+      "components": [
+        {"food_id": "food_003", "name": "ground turkey", "amount": 120, "unit": "g"},
+        {"food_id": "food_038", "name": "zucchini noodles", "amount": 200, "unit": "g"},
+        {"food_id": "food_036", "name": "marinara sauce", "amount": 120, "unit": "g"},
+        {"food_id": "food_033", "name": "parmesan cheese", "amount": 20, "unit": "g"}
+      ],
+      "nutrition": {"protein": 32, "carbs": 18, "fat": 18, "fiber": 6},
+      "dietary_tags": ["lean_protein", "italian_inspired", "low_carb", "comfort_food"]
+    },
+    {
+      "id": "meal_037",
+      "name": "Stuffed Portobello Mushrooms",
+      "calories": 275,
+      "meal_type": ["lunch", "dinner"],
+      "prep_time": 20,
+      "components": [
+        {"food_id": "food_035", "name": "portobello mushrooms", "amount": 150, "unit": "g"},
+        {"food_id": "food_015", "name": "spinach", "amount": 60, "unit": "g"},
+        {"food_id": "food_036", "name": "sun-dried tomatoes", "amount": 40, "unit": "g"},
+        {"food_id": "food_033", "name": "mozzarella cheese", "amount": 40, "unit": "g"},
+        {"food_id": "food_031", "name": "olive oil", "amount": 8, "unit": "ml"}
+      ],
+      "nutrition": {"protein": 18, "carbs": 12, "fat": 20, "fiber": 6},
+      "dietary_tags": ["vegetarian", "keto_friendly", "italian_inspired", "low_carb"]
+    },
+    {
+      "id": "meal_038",
+      "name": "Coconut Curry Chicken",
+      "calories": 420,
+      "meal_type": ["dinner"],
+      "prep_time": 22,
+      "components": [
+        {"food_id": "food_001", "name": "chicken thighs", "amount": 120, "unit": "g"},
+        {"food_id": "food_041", "name": "cauliflower", "amount": 150, "unit": "g"},
+        {"food_id": "food_017", "name": "bell peppers", "amount": 80, "unit": "g"},
+        {"food_id": "food_032", "name": "coconut milk", "amount": 80, "unit": "ml"}
+      ],
+      "nutrition": {"protein": 32, "carbs": 18, "fat": 28, "fiber": 8},
+      "dietary_tags": ["gluten_free", "dairy_free", "thai_inspired", "comfort_food"]
+    },
+    {
+      "id": "meal_039",
+      "name": "Almond Butter Toast",
+      "calories": 295,
+      "meal_type": ["breakfast", "snack"],
+      "prep_time": 5,
+      "components": [
+        {"food_id": "food_027", "name": "almond butter", "amount": 20, "unit": "g"},
+        {"food_id": "food_022", "name": "banana", "amount": 80, "unit": "g"},
+        {"food_id": "food_029", "name": "chia seeds", "amount": 8, "unit": "g"},
+        {"food_id": "food_021", "name": "strawberries", "amount": 60, "unit": "g"}
+      ],
+      "nutrition": {"protein": 10, "carbs": 32, "fat": 16, "fiber": 8},
+      "dietary_tags": ["vegetarian", "healthy_fats", "natural_sweetness", "fiber_rich"]
+    },
+    {
+      "id": "meal_040",
+      "name": "Salmon Quinoa Salad",
+      "calories": 445,
+      "meal_type": ["lunch", "dinner"],
+      "prep_time": 18,
+      "components": [
+        {"food_id": "food_002", "name": "grilled salmon", "amount": 120, "unit": "g"},
+        {"food_id": "food_010", "name": "quinoa", "amount": 100, "unit": "g"},
+        {"food_id": "food_019", "name": "avocado", "amount": 60, "unit": "g"},
+        {"food_id": "food_016", "name": "kale", "amount": 60, "unit": "g"},
+        {"food_id": "food_031", "name": "olive oil", "amount": 10, "unit": "ml"}
+      ],
+      "nutrition": {"protein": 34, "carbs": 32, "fat": 22, "fiber": 10},
+      "dietary_tags": ["omega_3", "superfood", "complete_meal", "heart_healthy"]
+    },
+    {
+      "id": "meal_041",
+      "name": "Veggie Omelet",
+      "calories": 315,
+      "meal_type": ["breakfast", "lunch"],
+      "prep_time": 10,
+      "components": [
+        {"food_id": "food_009", "name": "eggs", "amount": 120, "unit": "g"},
+        {"food_id": "food_017", "name": "bell peppers", "amount": 60, "unit": "g"},
+        {"food_id": "food_035", "name": "mushrooms", "amount": 60, "unit": "g"},
+        {"food_id": "food_015", "name": "spinach", "amount": 40, "unit": "g"},
+        {"food_id": "food_033", "name": "cheese", "amount": 25, "unit": "g"}
+      ],
+      "nutrition": {"protein": 22, "carbs": 8, "fat": 24, "fiber": 4},
+      "dietary_tags": ["vegetarian", "high_protein", "keto_friendly", "low_carb"]
+    },
+    {
+      "id": "meal_042",
+      "name": "Lentil and Vegetable Stew",
+      "calories": 295,
+      "meal_type": ["lunch", "dinner"],
+      "prep_time": 35,
+      "components": [
+        {"food_id": "food_026", "name": "red lentils", "amount": 120, "unit": "g"},
+        {"food_id": "food_018", "name": "carrots", "amount": 100, "unit": "g"},
+        {"food_id": "food_041", "name": "cauliflower", "amount": 100, "unit": "g"},
+        {"food_id": "food_036", "name": "diced tomatoes", "amount": 80, "unit": "g"},
+        {"food_id": "food_031", "name": "olive oil", "amount": 8, "unit": "ml"}
+      ],
+      "nutrition": {"protein": 16, "carbs": 42, "fat": 8, "fiber": 16},
+      "dietary_tags": ["vegan", "high_fiber", "comfort_food", "plant_protein"]
+    },
+    {
+      "id": "meal_043",
+      "name": "Grilled Vegetable Platter",
+      "calories": 285,
+      "meal_type": ["lunch", "side"],
+      "prep_time": 20,
+      "components": [
+        {"food_id": "food_038", "name": "grilled zucchini", "amount": 120, "unit": "g"},
+        {"food_id": "food_017", "name": "grilled bell peppers", "amount": 100, "unit": "g"},
+        {"food_id": "food_039", "name": "grilled asparagus", "amount": 100, "unit": "g"},
+        {"food_id": "food_033", "name": "goat cheese", "amount": 40, "unit": "g"},
+        {"food_id": "food_031", "name": "olive oil", "amount": 12, "unit": "ml"}
+      ],
+      "nutrition": {"protein": 14, "carbs": 18, "fat": 20, "fiber": 8},
+      "dietary_tags": ["vegetarian", "mediterranean", "colorful_plate", "grilled"]
+    },
+    {
+      "id": "meal_044",
+      "name": "Protein-Packed Smoothie",
+      "calories": 335,
+      "meal_type": ["breakfast", "snack"],
+      "prep_time": 5,
+      "components": [
+        {"food_id": "food_007", "name": "greek yogurt", "amount": 150, "unit": "g"},
+        {"food_id": "food_022", "name": "banana", "amount": 100, "unit": "g"},
+        {"food_id": "food_027", "name": "almond butter", "amount": 15, "unit": "g"},
+        {"food_id": "food_030", "name": "ground flax seeds", "amount": 10, "unit": "g"}
+      ],
+      "nutrition": {"protein": 20, "carbs": 32, "fat": 14, "fiber": 8},
+      "dietary_tags": ["high_protein", "omega_3", "probiotic", "vegetarian"]
+    },
+    {
+      "id": "meal_045",
+      "name": "Roasted Chickpea Bowl",
+      "calories": 375,
+      "meal_type": ["lunch", "dinner"],
+      "prep_time": 25,
+      "components": [
+        {"food_id": "food_025", "name": "roasted chickpeas", "amount": 150, "unit": "g"},
+        {"food_id": "food_013", "name": "roasted sweet potato", "amount": 120, "unit": "g"},
+        {"food_id": "food_016", "name": "massaged kale", "amount": 80, "unit": "g"},
+        {"food_id": "food_031", "name": "tahini dressing", "amount": 15, "unit": "ml"}
+      ],
+      "nutrition": {"protein": 18, "carbs": 55, "fat": 12, "fiber": 18},
+      "dietary_tags": ["vegan", "roasted", "middle_eastern", "fiber_rich"]
+    },
+    {
+      "id": "meal_046",
+      "name": "Tuna-Stuffed Tomatoes",
+      "calories": 295,
+      "meal_type": ["lunch"],
+      "prep_time": 8,
+      "components": [
+        {"food_id": "food_047", "name": "tuna", "amount": 120, "unit": "g"},
+        {"food_id": "food_036", "name": "large tomatoes", "amount": 200, "unit": "g"},
+        {"food_id": "food_037", "name": "cucumber", "amount": 60, "unit": "g"},
+        {"food_id": "food_031", "name": "olive oil", "amount": 8, "unit": "ml"}
+      ],
+      "nutrition": {"protein": 32, "carbs": 12, "fat": 12, "fiber": 4},
+      "dietary_tags": ["high_protein", "low_carb", "omega_3", "fresh"]
+    },
+    {
+      "id": "meal_047",
+      "name": "Mushroom and Spinach Quesadilla",
+      "calories": 325,
+      "meal_type": ["lunch", "dinner"],
+      "prep_time": 12,
+      "components": [
+        {"food_id": "food_035", "name": "sauteed mushrooms", "amount": 100, "unit": "g"},
+        {"food_id": "food_015", "name": "spinach", "amount": 60, "unit": "g"},
+        {"food_id": "food_033", "name": "cheese", "amount": 60, "unit": "g"},
+        {"food_id": "food_031", "name": "olive oil", "amount": 8, "unit": "ml"}
+      ],
+      "nutrition": {"protein": 20, "carbs": 25, "fat": 18, "fiber": 4},
+      "dietary_tags": ["vegetarian", "calcium_rich", "comfort_food", "mexican_inspired"]
+    },
+    {
+      "id": "meal_048",
+      "name": "Baked Sweet Potato with Toppings",
+      "calories": 345,
+      "meal_type": ["lunch", "dinner"],
+      "prep_time": 45,
+      "components": [
+        {"food_id": "food_013", "name": "baked sweet potato", "amount": 200, "unit": "g"},
+        {"food_id": "food_024", "name": "black beans", "amount": 100, "unit": "g"},
+        {"food_id": "food_019", "name": "avocado", "amount": 40, "unit": "g"},
+        {"food_id": "food_007", "name": "greek yogurt", "amount": 30, "unit": "g"}
+      ],
+      "nutrition": {"protein": 16, "carbs": 58, "fat": 8, "fiber": 16},
+      "dietary_tags": ["vegetarian", "fiber_rich", "comfort_food", "nutrient_dense"]
+    },
+    {
+      "id": "meal_049",
+      "name": "Asian Cucumber Salad",
+      "calories": 185,
+      "meal_type": ["side", "snack"],
+      "prep_time": 10,
+      "components": [
+        {"food_id": "food_037", "name": "cucumber", "amount": 200, "unit": "g"},
+        {"food_id": "food_018", "name": "carrots", "amount": 60, "unit": "g"},
+        {"food_id": "food_043", "name": "edamame", "amount": 50, "unit": "g"},
+        {"food_id": "food_028", "name": "sesame seeds", "amount": 8, "unit": "g"}
+      ],
+      "nutrition": {"protein": 8, "carbs": 18, "fat": 8, "fiber": 8},
+      "dietary_tags": ["vegan", "refreshing", "asian_inspired", "low_calorie"]
+    },
+    {
+      "id": "meal_050",
+      "name": "Mediterranean Stuffed Eggplant",
+      "calories": 295,
+      "meal_type": ["dinner"],
+      "prep_time": 40,
+      "components": [
+        {"food_id": "food_048", "name": "ground lamb", "amount": 80, "unit": "g"},
+        {"food_id": "food_036", "name": "diced tomatoes", "amount": 100, "unit": "g"},
+        {"food_id": "food_033", "name": "feta cheese", "amount": 30, "unit": "g"},
+        {"food_id": "food_031", "name": "olive oil", "amount": 10, "unit": "ml"}
+      ],
+      "nutrition": {"protein": 22, "carbs": 15, "fat": 18, "fiber": 6},
+      "dietary_tags": ["mediterranean", "protein_rich", "traditional", "gluten_free"]
+    }
+  ]
+}

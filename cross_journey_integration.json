@@ -1,0 +1,361 @@
+{
+  "integration_matrix": {
+    "recipe_discovery": {
+      "transitions_to": {
+        "cooking_guidance": {
+          "trigger": "start_cooking",
+          "data_mapping": {
+            "recipe_id": "selected_recipe.id",
+            "servings": "user_selected_servings || recipe.default_servings",
+            "user_dietary_restrictions": "user_profile.dietary_restrictions",
+            "cooking_skill": "user_profile.cooking_skill"
+          },
+          "context_handoff": {
+            "cooking_session_id": "generate_new_id",
+            "recipe_data": "full_recipe_object",
+            "ingredient_adjustments": "calculated_quantities"
+          }
+        },
+        "grocery_assistance": {
+          "trigger": "add_to_grocery_list",
+          "data_mapping": {
+            "ingredient_list": "recipe.ingredients",
+            "servings_multiplier": "user_selected_servings / recipe.default_servings",
+            "list_name": "recipe.name + ' Ingredients'",
+            "source_type": "recipe"
+          }
+        },
+        "meal_planning": {
+          "trigger": "add_to_meal_plan",
+          "data_mapping": {
+            "recipe_id": "selected_recipe.id",
+            "suggested_meal_type": "determine_from_recipe_tags",
+            "nutrition_data": "recipe.nutrition_per_serving",
+            "prep_time": "recipe.prep_time"
+          }
+        },
+        "food_tracking": {
+          "trigger": "track_recipe_nutrition",
+          "data_mapping": {
+            "food_components": "recipe.ingredients",
+            "nutrition_totals": "recipe.nutrition_per_serving * servings",
+            "meal_category": "determine_from_time_or_type"
+          }
+        }
+      }
+    },
+    "cooking_guidance": {
+      "transitions_to": {
+        "food_tracking": {
+          "trigger": "track_cooked_meal",
+          "data_mapping": {
+            "recipe_id": "current_cooking_session.recipe_id",
+            "actual_servings": "cooking_session.target_servings",
+            "completion_time": "current_timestamp",
+            "meal_type": "determine_from_cooking_time"
+          }
+        },
+        "recipe_discovery": {
+          "trigger": "cook_something_else",
+          "data_mapping": {
+            "previous_recipe": "current_cooking_session.recipe_id",
+            "user_skill_update": "assess_from_cooking_feedback",
+            "preferred_difficulty": "cooking_session.difficulty_rating"
+          }
+        },
+        "grocery_assistance": {
+          "trigger": "missing_ingredients",
+          "data_mapping": {
+            "missing_items": "cooking_session.missing_ingredients",
+            "recipe_context": "cooking_session.recipe_id",
+            "urgency": "high"
+          }
+        }
+      }
+    },
+    "meal_planning": {
+      "transitions_to": {
+        "grocery_assistance": {
+          "trigger": "generate_shopping_list",
+          "data_mapping": {
+            "meal_plan_id": "current_meal_plan.id",
+            "all_ingredients": "consolidate_meal_plan_ingredients",
+            "date_range": "meal_plan.start_date + ' to ' + meal_plan.end_date",
+            "household_size": "meal_plan.household_size"
+          }
+        },
+        "recipe_discovery": {
+          "trigger": "find_recipe_for_slot",
+          "data_mapping": {
+            "meal_type": "selected_meal_slot.type",
+            "calorie_target": "selected_meal_slot.target_calories",
+            "dietary_restrictions": "meal_plan.dietary_restrictions",
+            "date": "selected_meal_slot.date"
+          }
+        },
+        "cooking_guidance": {
+          "trigger": "cook_planned_meal",
+          "data_mapping": {
+            "recipe_id": "meal_slot.recipe_id",
+            "planned_servings": "meal_slot.servings",
+            "scheduled_time": "meal_slot.planned_time",
+            "meal_plan_context": "meal_plan.id"
+          }
+        },
+        "food_tracking": {
+          "trigger": "track_meal_plan_day",
+          "data_mapping": {
+            "daily_meals": "meal_plan.daily_plans[selected_date]",
+            "target_date": "selected_date",
+            "nutrition_targets": "meal_plan.target_macros_per_day"
+          }
+        }
+      }
+    },
+    "food_tracking": {
+      "transitions_to": {
+        "recipe_discovery": {
+          "trigger": "find_recipes_for_goals",
+          "data_mapping": {
+            "remaining_calories": "daily_goal.calories - consumed_calories",
+            "needed_macros": "daily_goal.macros - consumed_macros",
+            "meal_type": "determine_from_time",
+            "dietary_restrictions": "user_profile.dietary_restrictions"
+          }
+        },
+        "meal_planning": {
+          "trigger": "plan_based_on_tracking",
+          "data_mapping": {
+            "calorie_goal": "user_nutrition_goals.daily_calories",
+            "macro_targets": "user_nutrition_goals.macro_targets",
+            "food_preferences": "frequently_logged_foods",
+            "tracking_patterns": "meal_timing_patterns"
+          }
+        },
+        "nutritional_lookup": {
+          "trigger": "lookup_food_details",
+          "data_mapping": {
+            "food_id": "selected_log_entry.food_id",
+            "serving_size": "selected_log_entry.quantity",
+            "comparison_context": "daily_nutrition_goals"
+          }
+        }
+      }
+    },
+    "grocery_assistance": {
+      "transitions_to": {
+        "recipe_discovery": {
+          "trigger": "find_recipes_with_bought_ingredients",
+          "data_mapping": {
+            "available_ingredients": "completed_grocery_list.purchased_items",
+            "dietary_restrictions": "user_profile.dietary_restrictions",
+            "suggested_cuisine": "determine_from_ingredients"
+          }
+        },
+        "meal_planning": {
+          "trigger": "plan_meals_from_groceries",
+          "data_mapping": {
+            "purchased_ingredients": "grocery_list.purchased_items",
+            "household_size": "user_profile.household_size",
+            "budget_spent": "grocery_list.total_cost",
+            "shopping_date": "grocery_list.completion_date"
+          }
+        }
+      }
+    },
+    "nutritional_lookup": {
+      "transitions_to": {
+        "food_tracking": {
+          "trigger": "track_this_food",
+          "data_mapping": {
+            "food_id": "current_lookup.food_id",
+            "serving_size": "user_selected_serving",
+            "nutrition_data": "current_lookup.nutrition_data",
+            "meal_type": "determine_from_time"
+          }
+        },
+        "recipe_discovery": {
+          "trigger": "find_recipes_with_food",
+          "data_mapping": {
+            "primary_ingredient": "current_lookup.food_id",
+            "nutrition_goals": "user_nutrition_goals",
+            "dietary_restrictions": "user_profile.dietary_restrictions"
+          }
+        },
+        "meal_planning": {
+          "trigger": "use_in_meal_planning",
+          "data_mapping": {
+            "food_id": "current_lookup.food_id",
+            "nutrition_contribution": "current_lookup.nutrition_data",
+            "serving_preferences": "user_selected_serving"
+          }
+        }
+      }
+    },
+    "calorie_meal_suggestions": {
+      "transitions_to": {
+        "recipe_discovery": {
+          "trigger": "get_full_recipe",
+          "data_mapping": {
+            "meal_components": "selected_meal.components",
+            "calorie_target": "selected_meal.calories",
+            "prep_time": "selected_meal.prep_time"
+          }
+        },
+        "cooking_guidance": {
+          "trigger": "cook_suggested_meal",
+          "data_mapping": {
+            "meal_components": "selected_meal.components",
+            "target_servings": "1",
+            "cooking_instructions": "generate_from_components"
+          }
+        },
+        "meal_planning": {
+          "trigger": "add_meal_to_plan",
+          "data_mapping": {
+            "meal_data": "selected_meal",
+            "target_date": "user_selected_date",
+            "meal_type": "selected_meal.meal_type"
+          }
+        },
+        "food_tracking": {
+          "trigger": "log_suggested_meal",
+          "data_mapping": {
+            "meal_components": "selected_meal.components",
+            "total_nutrition": "selected_meal.nutrition_totals",
+            "meal_type": "selected_meal.meal_type"
+          }
+        }
+      }
+    },
+    "event_planning": {
+      "transitions_to": {
+        "grocery_assistance": {
+          "trigger": "create_event_shopping_list",
+          "data_mapping": {
+            "event_menu": "event_plan.menu",
+            "guest_count": "event_plan.guest_count",
+            "budget": "event_plan.budget",
+            "event_date": "event_plan.date"
+          }
+        },
+        "recipe_discovery": {
+          "trigger": "find_event_recipes",
+          "data_mapping": {
+            "event_type": "event_plan.type",
+            "guest_count": "event_plan.guest_count",
+            "cuisine_preferences": "event_plan.cuisine_preferences",
+            "dietary_accommodations": "event_plan.dietary_accommodations"
+          }
+        }
+      }
+    }
+  },
+  "shared_data_models": {
+    "user_context": {
+      "persistent_across_journeys": [
+        "user_id",
+        "dietary_restrictions", 
+        "food_allergies",
+        "cuisine_preferences",
+        "cooking_skill_level",
+        "household_size",
+        "nutrition_goals"
+      ],
+      "session_specific": [
+        "current_journey",
+        "journey_history",
+        "temporary_selections",
+        "search_filters",
+        "conversation_context"
+      ]
+    },
+    "item_references": {
+      "recipe_reference": {
+        "id": "string",
+        "name": "string",
+        "servings": "number",
+        "nutrition_per_serving": "object",
+        "ingredients": "array",
+        "cross_journey_compatible": "boolean"
+      },
+      "food_reference": {
+        "id": "string", 
+        "name": "string",
+        "serving_size": "object",
+        "nutrition_data": "object",
+        "category": "string"
+      },
+      "meal_reference": {
+        "id": "string",
+        "components": "array",
+        "total_nutrition": "object",
+        "meal_type": "string",
+        "prep_time": "number"
+      }
+    }
+  },
+  "transition_handling": {
+    "data_validation": {
+      "required_fields_check": true,
+      "data_type_validation": true,
+      "business_rule_validation": true
+    },
+    "context_preservation": {
+      "save_current_state": true,
+      "maintain_user_selections": true,
+      "preserve_conversation_flow": true
+    },
+    "seamless_handoff": {
+      "auto_populate_forms": true,
+      "maintain_user_intent": true,
+      "provide_back_navigation": true
+    }
+  },
+  "favorites_and_history": {
+    "cross_journey_favorites": {
+      "recipes": {
+        "available_in": ["recipe_discovery", "meal_planning", "cooking_guidance"],
+        "quick_access": true,
+        "personalization_data": ["rating", "notes", "modifications", "frequency_cooked"]
+      },
+      "foods": {
+        "available_in": ["food_tracking", "nutritional_lookup", "meal_suggestions"],
+        "quick_access": true,
+        "personalization_data": ["serving_preferences", "frequency_consumed", "meal_type_association"]
+      },
+      "meal_plans": {
+        "available_in": ["meal_planning", "grocery_assistance", "food_tracking"],
+        "template_creation": true,
+        "personalization_data": ["success_rating", "modifications", "repeat_frequency"]
+      }
+    },
+    "recent_activity": {
+      "recipes_viewed": "last_20",
+      "foods_searched": "last_15",
+      "meals_cooked": "last_10",
+      "grocery_lists": "last_5",
+      "cross_reference_suggestions": true
+    }
+  },
+  "recommendation_engine": {
+    "cross_journey_recommendations": {
+      "recipe_to_meal_plan": {
+        "trigger": "after_recipe_rating_4_plus",
+        "suggestion": "Would you like to add this recipe to your weekly meal plan?"
+      },
+      "tracking_to_recipes": {
+        "trigger": "nutrition_goal_deficit_detected",
+        "suggestion": "I found some recipes that could help you reach your {{nutrient}} goal."
+      },
+      "grocery_to_cooking": {
+        "trigger": "grocery_list_completed",
+        "suggestion": "Ready to cook? Here are recipes you can make with your purchased ingredients."
+      },
+      "meal_plan_to_prep": {
+        "trigger": "meal_plan_created", 
+        "suggestion": "Would you like step-by-step cooking guidance for your planned meals?"
+      }
+    }
+  }
+}

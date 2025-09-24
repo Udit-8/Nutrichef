@@ -1,0 +1,124 @@
+{
+  "timestamp": "2025-09-12T19:02:15.788170",
+  "summary": {
+    "total_tests": 19,
+    "passed_tests": 19,
+    "success_rate": 100.0
+  },
+  "tests": [
+    {
+      "test": "Food nutrition data loaded",
+      "passed": true,
+      "details": "Loaded 50 foods",
+      "timestamp": "2025-09-12T19:02:15.787969"
+    },
+    {
+      "test": "Retrieve specific food by ID",
+      "passed": true,
+      "details": "",
+      "timestamp": "2025-09-12T19:02:15.787974"
+    },
+    {
+      "test": "Food categories",
+      "passed": true,
+      "details": "Found 9 categories",
+      "timestamp": "2025-09-12T19:02:15.787982"
+    },
+    {
+      "test": "Food serving options",
+      "passed": true,
+      "details": "Found 3 servings",
+      "timestamp": "2025-09-12T19:02:15.787996"
+    },
+    {
+      "test": "Food search by name",
+      "passed": true,
+      "details": "Found 1 results",
+      "timestamp": "2025-09-12T19:02:15.788006"
+    },
+    {
+      "test": "Partial name search",
+      "passed": true,
+      "details": "",
+      "timestamp": "2025-09-12T19:02:15.788014"
+    },
+    {
+      "test": "Search by category",
+      "passed": true,
+      "details": "Found 12 protein foods",
+      "timestamp": "2025-09-12T19:02:15.788019"
+    },
+    {
+      "test": "Popular foods",
+      "passed": true,
+      "details": "Found 10 popular foods",
+      "timestamp": "2025-09-12T19:02:15.788028"
+    },
+    {
+      "test": "High protein foods",
+      "passed": true,
+      "details": "Found 10 high-protein foods",
+      "timestamp": "2025-09-12T19:02:15.788047"
+    },
+    {
+      "test": "Low calorie foods",
+      "passed": true,
+      "details": "Found 35 low-calorie foods",
+      "timestamp": "2025-09-12T19:02:15.788063"
+    },
+    {
+      "test": "Nutrition per 100g calculation",
+      "passed": true,
+      "details": "",
+      "timestamp": "2025-09-12T19:02:15.788067"
+    },
+    {
+      "test": "Allergen information access",
+      "passed": true,
+      "details": "",
+      "timestamp": "2025-09-12T19:02:15.788069"
+    },
+    {
+      "test": "Dietary information available",
+      "passed": true,
+      "details": "",
+      "timestamp": "2025-09-12T19:02:15.788071"
+    },
+    {
+      "test": "Session set/get",
+      "passed": true,
+      "details": "",
+      "timestamp": "2025-09-12T19:02:15.788076"
+    },
+    {
+      "test": "Food diary storage",
+      "passed": true,
+      "details": "",
+      "timestamp": "2025-09-12T19:02:15.788085"
+    },
+    {
+      "test": "Nutrition goals storage",
+      "passed": true,
+      "details": "",
+      "timestamp": "2025-09-12T19:02:15.788088"
+    },
+    {
+      "test": "Macro calculation logic",
+      "passed": true,
+      "details": "Calculated 435 vs expected ~400",
+      "timestamp": "2025-09-12T19:02:15.788091"
+    },
+    {
+      "test": "Portion scaling",
+      "passed": true,
+      "details": "",
+      "timestamp": "2025-09-12T19:02:15.788093"
+    },
+    {
+      "test": "Daily distribution calculation",
+      "passed": true,
+      "details": "",
+      "timestamp": "2025-09-12T19:02:15.788094"
+    }
+  ]
+}

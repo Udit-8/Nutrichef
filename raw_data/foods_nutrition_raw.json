@@ -1,0 +1,1400 @@
+{
+  "foods": [
+    {
+      "id": "food_001",
+      "name": "Chicken Breast, Grilled",
+      "category": "protein",
+      "subcategory": "poultry",
+      "per_100g": {
+        "calories": 165,
+        "protein": 31.0,
+        "carbs": 0.0,
+        "fat": 3.6,
+        "fiber": 0.0,
+        "sugar": 0.0,
+        "sodium": 74
+      },
+      "vitamins_per_100g": {
+        "vitamin_b6": 0.9,
+        "niacin": 14.8,
+        "riboflavin": 0.1,
+        "thiamine": 0.1
+      },
+      "minerals_per_100g": {
+        "phosphorus": 220,
+        "selenium": 27.6,
+        "potassium": 256,
+        "iron": 0.86
+      },
+      "dietary_tags": ["high_protein", "low_fat", "gluten_free"]
+    },
+    {
+      "id": "food_002",
+      "name": "Salmon, Atlantic",
+      "category": "protein",
+      "subcategory": "fish",
+      "per_100g": {
+        "calories": 208,
+        "protein": 25.4,
+        "carbs": 0.0,
+        "fat": 12.4,
+        "fiber": 0.0,
+        "sugar": 0.0,
+        "sodium": 44
+      },
+      "vitamins_per_100g": {
+        "vitamin_d": 11.0,
+        "vitamin_b12": 3.05,
+        "niacin": 8.0,
+        "vitamin_b6": 0.6
+      },
+      "minerals_per_100g": {
+        "selenium": 36.5,
+        "phosphorus": 240,
+        "potassium": 384,
+        "magnesium": 28
+      },
+      "dietary_tags": ["high_protein", "omega_3", "heart_healthy", "gluten_free"]
+    },
+    {
+      "id": "food_003",
+      "name": "Ground Turkey, Lean",
+      "category": "protein",
+      "subcategory": "poultry",
+      "per_100g": {
+        "calories": 149,
+        "protein": 20.9,
+        "carbs": 0.0,
+        "fat": 6.6,
+        "fiber": 0.0,
+        "sugar": 0.0,
+        "sodium": 76
+      },
+      "vitamins_per_100g": {
+        "niacin": 6.8,
+        "vitamin_b6": 0.5,
+        "vitamin_b12": 1.4,
+        "riboflavin": 0.2
+      },
+      "minerals_per_100g": {
+        "selenium": 27.9,
+        "phosphorus": 180,
+        "potassium": 246,
+        "zinc": 2.0
+      },
+      "dietary_tags": ["lean_protein", "low_fat", "gluten_free"]
+    },
+    {
+      "id": "food_004",
+      "name": "Beef Sirloin",
+      "category": "protein",
+      "subcategory": "red_meat",
+      "per_100g": {
+        "calories": 158,
+        "protein": 26.0,
+        "carbs": 0.0,
+        "fat": 5.4,
+        "fiber": 0.0,
+        "sugar": 0.0,
+        "sodium": 56
+      },
+      "vitamins_per_100g": {
+        "vitamin_b12": 2.6,
+        "niacin": 6.2,
+        "vitamin_b6": 0.7,
+        "riboflavin": 0.2
+      },
+      "minerals_per_100g": {
+        "iron": 2.9,
+        "zinc": 4.5,
+        "selenium": 26.4,
+        "phosphorus": 198
+      },
+      "dietary_tags": ["high_protein", "iron_rich", "gluten_free"]
+    },
+    {
+      "id": "food_005",
+      "name": "Shrimp",
+      "category": "protein",
+      "subcategory": "seafood",
+      "per_100g": {
+        "calories": 99,
+        "protein": 18.9,
+        "carbs": 0.9,
+        "fat": 1.7,
+        "fiber": 0.0,
+        "sugar": 0.0,
+        "sodium": 111
+      },
+      "vitamins_per_100g": {
+        "vitamin_b12": 1.3,
+        "niacin": 2.8,
+        "vitamin_e": 1.2,
+        "vitamin_a": 54
+      },
+      "minerals_per_100g": {
+        "selenium": 38.0,
+        "iodine": 35,
+        "phosphorus": 237,
+        "zinc": 1.6
+      },
+      "dietary_tags": ["low_calorie", "high_protein", "low_fat", "gluten_free"]
+    },
+    {
+      "id": "food_006",
+      "name": "Tofu, Firm",
+      "category": "protein",
+      "subcategory": "plant_protein",
+      "per_100g": {
+        "calories": 144,
+        "protein": 17.3,
+        "carbs": 2.8,
+        "fat": 8.7,
+        "fiber": 2.3,
+        "sugar": 0.6,
+        "sodium": 7
+      },
+      "vitamins_per_100g": {
+        "folate": 15,
+        "vitamin_k": 2.4,
+        "thiamine": 0.1,
+        "riboflavin": 0.1
+      },
+      "minerals_per_100g": {
+        "calcium": 683,
+        "iron": 2.7,
+        "magnesium": 58,
+        "phosphorus": 287
+      },
+      "dietary_tags": ["vegetarian", "vegan", "high_protein", "gluten_free"]
+    },
+    {
+      "id": "food_007",
+      "name": "Greek Yogurt, Plain",
+      "category": "dairy",
+      "subcategory": "yogurt",
+      "per_100g": {
+        "calories": 59,
+        "protein": 10.0,
+        "carbs": 3.6,
+        "fat": 0.4,
+        "fiber": 0.0,
+        "sugar": 3.6,
+        "sodium": 36
+      },
+      "vitamins_per_100g": {
+        "vitamin_b12": 0.5,
+        "riboflavin": 0.3,
+        "vitamin_a": 27,
+        "folate": 7
+      },
+      "minerals_per_100g": {
+        "calcium": 110,
+        "phosphorus": 135,
+        "potassium": 141,
+        "zinc": 0.6
+      },
+      "dietary_tags": ["high_protein", "low_fat", "probiotic", "vegetarian"]
+    },
+    {
+      "id": "food_008",
+      "name": "Cottage Cheese, Low-fat",
+      "category": "dairy",
+      "subcategory": "cheese",
+      "per_100g": {
+        "calories": 98,
+        "protein": 11.1,
+        "carbs": 3.4,
+        "fat": 4.3,
+        "fiber": 0.0,
+        "sugar": 2.7,
+        "sodium": 364
+      },
+      "vitamins_per_100g": {
+        "vitamin_b12": 0.7,
+        "riboflavin": 0.2,
+        "folate": 12,
+        "vitamin_a": 37
+      },
+      "minerals_per_100g": {
+        "calcium": 83,
+        "phosphorus": 159,
+        "selenium": 20.3,
+        "potassium": 104
+      },
+      "dietary_tags": ["high_protein", "low_fat", "vegetarian"]
+    },
+    {
+      "id": "food_009",
+      "name": "Eggs, Whole",
+      "category": "protein",
+      "subcategory": "eggs",
+      "per_100g": {
+        "calories": 155,
+        "protein": 13.0,
+        "carbs": 1.1,
+        "fat": 11.0,
+        "fiber": 0.0,
+        "sugar": 1.1,
+        "sodium": 124
+      },
+      "vitamins_per_100g": {
+        "vitamin_b12": 0.9,
+        "folate": 47,
+        "vitamin_a": 540,
+        "vitamin_d": 2.0
+      },
+      "minerals_per_100g": {
+        "selenium": 30.7,
+        "phosphorus": 198,
+        "iron": 1.8,
+        "zinc": 1.3
+      },
+      "dietary_tags": ["complete_protein", "vitamin_rich", "vegetarian", "gluten_free"]
+    },
+    {
+      "id": "food_010",
+      "name": "Quinoa, Cooked",
+      "category": "grain",
+      "subcategory": "whole_grain",
+      "per_100g": {
+        "calories": 120,
+        "protein": 4.4,
+        "carbs": 21.8,
+        "fat": 1.9,
+        "fiber": 2.8,
+        "sugar": 0.9,
+        "sodium": 5
+      },
+      "vitamins_per_100g": {
+        "folate": 42,
+        "vitamin_e": 0.6,
+        "thiamine": 0.1,
+        "riboflavin": 0.1
+      },
+      "minerals_per_100g": {
+        "manganese": 0.6,
+        "phosphorus": 152,
+        "magnesium": 64,
+        "iron": 1.5
+      },
+      "dietary_tags": ["complete_protein", "gluten_free", "high_fiber", "vegetarian"]
+    },
+    {
+      "id": "food_011",
+      "name": "Brown Rice, Cooked",
+      "category": "grain",
+      "subcategory": "whole_grain",
+      "per_100g": {
+        "calories": 112,
+        "protein": 2.6,
+        "carbs": 23.0,
+        "fat": 0.9,
+        "fiber": 1.8,
+        "sugar": 0.4,
+        "sodium": 5
+      },
+      "vitamins_per_100g": {
+        "niacin": 2.6,
+        "thiamine": 0.1,
+        "vitamin_b6": 0.1,
+        "folate": 9
+      },
+      "minerals_per_100g": {
+        "manganese": 1.1,
+        "selenium": 23.4,
+        "magnesium": 43,
+        "phosphorus": 83
+      },
+      "dietary_tags": ["whole_grain", "gluten_free", "fiber_rich", "vegetarian"]
+    },
+    {
+      "id": "food_012",
+      "name": "Oats, Rolled",
+      "category": "grain",
+      "subcategory": "whole_grain",
+      "per_100g": {
+        "calories": 389,
+        "protein": 16.9,
+        "carbs": 66.3,
+        "fat": 6.9,
+        "fiber": 10.6,
+        "sugar": 0.0,
+        "sodium": 2
+      },
+      "vitamins_per_100g": {
+        "thiamine": 0.8,
+        "folate": 56,
+        "vitamin_e": 0.7,
+        "niacin": 0.9
+      },
+      "minerals_per_100g": {
+        "manganese": 4.9,
+        "phosphorus": 523,
+        "magnesium": 177,
+        "iron": 4.7
+      },
+      "dietary_tags": ["high_fiber", "whole_grain", "heart_healthy", "vegetarian"]
+    },
+    {
+      "id": "food_013",
+      "name": "Sweet Potato",
+      "category": "vegetable",
+      "subcategory": "root_vegetable",
+      "per_100g": {
+        "calories": 86,
+        "protein": 1.6,
+        "carbs": 20.1,
+        "fat": 0.1,
+        "fiber": 3.0,
+        "sugar": 4.2,
+        "sodium": 4
+      },
+      "vitamins_per_100g": {
+        "vitamin_a": 14187,
+        "vitamin_c": 2.4,
+        "vitamin_b6": 0.2,
+        "folate": 11
+      },
+      "minerals_per_100g": {
+        "potassium": 337,
+        "manganese": 0.3,
+        "magnesium": 25,
+        "phosphorus": 47
+      },
+      "dietary_tags": ["high_vitamin_a", "fiber_rich", "gluten_free", "vegetarian"]
+    },
+    {
+      "id": "food_014",
+      "name": "Broccoli",
+      "category": "vegetable",
+      "subcategory": "cruciferous",
+      "per_100g": {
+        "calories": 34,
+        "protein": 2.8,
+        "carbs": 6.6,
+        "fat": 0.4,
+        "fiber": 2.6,
+        "sugar": 1.5,
+        "sodium": 33
+      },
+      "vitamins_per_100g": {
+        "vitamin_c": 89.2,
+        "vitamin_k": 101.6,
+        "folate": 63,
+        "vitamin_a": 623
+      },
+      "minerals_per_100g": {
+        "potassium": 316,
+        "phosphorus": 66,
+        "calcium": 47,
+        "iron": 0.7
+      },
+      "dietary_tags": ["high_vitamin_c", "low_calorie", "antioxidant_rich", "vegetarian"]
+    },
+    {
+      "id": "food_015",
+      "name": "Spinach",
+      "category": "vegetable",
+      "subcategory": "leafy_green",
+      "per_100g": {
+        "calories": 23,
+        "protein": 2.9,
+        "carbs": 3.6,
+        "fat": 0.4,
+        "fiber": 2.2,
+        "sugar": 0.4,
+        "sodium": 79
+      },
+      "vitamins_per_100g": {
+        "vitamin_k": 482.9,
+        "vitamin_a": 9377,
+        "folate": 194,
+        "vitamin_c": 28.1
+      },
+      "minerals_per_100g": {
+        "iron": 2.7,
+        "magnesium": 79,
+        "potassium": 558,
+        "calcium": 99
+      },
+      "dietary_tags": ["iron_rich", "low_calorie", "vitamin_rich", "vegetarian"]
+    },
+    {
+      "id": "food_016",
+      "name": "Kale",
+      "category": "vegetable",
+      "subcategory": "leafy_green",
+      "per_100g": {
+        "calories": 49,
+        "protein": 4.3,
+        "carbs": 8.8,
+        "fat": 0.9,
+        "fiber": 3.6,
+        "sugar": 2.3,
+        "sodium": 38
+      },
+      "vitamins_per_100g": {
+        "vitamin_k": 704.8,
+        "vitamin_a": 15376,
+        "vitamin_c": 120.0,
+        "folate": 29
+      },
+      "minerals_per_100g": {
+        "calcium": 150,
+        "iron": 1.5,
+        "potassium": 491,
+        "magnesium": 47
+      },
+      "dietary_tags": ["superfood", "vitamin_rich", "low_calorie", "vegetarian"]
+    },
+    {
+      "id": "food_017",
+      "name": "Bell Peppers, Red",
+      "category": "vegetable",
+      "subcategory": "pepper",
+      "per_100g": {
+        "calories": 31,
+        "protein": 1.0,
+        "carbs": 7.3,
+        "fat": 0.3,
+        "fiber": 2.5,
+        "sugar": 4.2,
+        "sodium": 4
+      },
+      "vitamins_per_100g": {
+        "vitamin_c": 127.7,
+        "vitamin_a": 3131,
+        "vitamin_b6": 0.3,
+        "folate": 46
+      },
+      "minerals_per_100g": {
+        "potassium": 211,
+        "phosphorus": 26,
+        "magnesium": 12,
+        "calcium": 7
+      },
+      "dietary_tags": ["high_vitamin_c", "low_calorie", "antioxidant_rich", "vegetarian"]
+    },
+    {
+      "id": "food_018",
+      "name": "Carrots",
+      "category": "vegetable",
+      "subcategory": "root_vegetable",
+      "per_100g": {
+        "calories": 41,
+        "protein": 0.9,
+        "carbs": 9.6,
+        "fat": 0.2,
+        "fiber": 2.8,
+        "sugar": 4.7,
+        "sodium": 69
+      },
+      "vitamins_per_100g": {
+        "vitamin_a": 16706,
+        "vitamin_k": 13.2,
+        "vitamin_c": 5.9,
+        "folate": 19
+      },
+      "minerals_per_100g": {
+        "potassium": 320,
+        "phosphorus": 35,
+        "calcium": 33,
+        "magnesium": 12
+      },
+      "dietary_tags": ["high_vitamin_a", "fiber_rich", "low_calorie", "vegetarian"]
+    },
+    {
+      "id": "food_019",
+      "name": "Avocado",
+      "category": "fruit",
+      "subcategory": "tropical_fruit",
+      "per_100g": {
+        "calories": 160,
+        "protein": 2.0,
+        "carbs": 8.5,
+        "fat": 14.7,
+        "fiber": 6.7,
+        "sugar": 0.7,
+        "sodium": 7
+      },
+      "vitamins_per_100g": {
+        "vitamin_k": 21.0,
+        "folate": 81,
+        "vitamin_c": 10.0,
+        "vitamin_e": 2.1
+      },
+      "minerals_per_100g": {
+        "potassium": 485,
+        "magnesium": 29,
+        "phosphorus": 52,
+        "copper": 0.2
+      },
+      "dietary_tags": ["healthy_fats", "high_fiber", "potassium_rich", "vegetarian"]
+    },
+    {
+      "id": "food_020",
+      "name": "Blueberries",
+      "category": "fruit",
+      "subcategory": "berry",
+      "per_100g": {
+        "calories": 57,
+        "protein": 0.7,
+        "carbs": 14.5,
+        "fat": 0.3,
+        "fiber": 2.4,
+        "sugar": 10.0,
+        "sodium": 1
+      },
+      "vitamins_per_100g": {
+        "vitamin_c": 9.7,
+        "vitamin_k": 19.3,
+        "vitamin_e": 0.6,
+        "folate": 6
+      },
+      "minerals_per_100g": {
+        "potassium": 77,
+        "phosphorus": 12,
+        "calcium": 6,
+        "magnesium": 6
+      },
+      "dietary_tags": ["antioxidant_rich", "low_calorie", "fiber_rich", "vegetarian"]
+    },
+    {
+      "id": "food_021",
+      "name": "Strawberries",
+      "category": "fruit",
+      "subcategory": "berry",
+      "per_100g": {
+        "calories": 32,
+        "protein": 0.7,
+        "carbs": 7.7,
+        "fat": 0.3,
+        "fiber": 2.0,
+        "sugar": 4.9,
+        "sodium": 1
+      },
+      "vitamins_per_100g": {
+        "vitamin_c": 58.8,
+        "folate": 24,
+        "vitamin_k": 2.2,
+        "vitamin_e": 0.3
+      },
+      "minerals_per_100g": {
+        "potassium": 153,
+        "phosphorus": 24,
+        "magnesium": 13,
+        "calcium": 16
+      },
+      "dietary_tags": ["high_vitamin_c", "low_calorie", "antioxidant_rich", "vegetarian"]
+    },
+    {
+      "id": "food_022",
+      "name": "Bananas",
+      "category": "fruit",
+      "subcategory": "tropical_fruit",
+      "per_100g": {
+        "calories": 89,
+        "protein": 1.1,
+        "carbs": 22.8,
+        "fat": 0.3,
+        "fiber": 2.6,
+        "sugar": 12.2,
+        "sodium": 1
+      },
+      "vitamins_per_100g": {
+        "vitamin_b6": 0.4,
+        "vitamin_c": 8.7,
+        "folate": 20,
+        "niacin": 0.7
+      },
+      "minerals_per_100g": {
+        "potassium": 358,
+        "magnesium": 27,
+        "phosphorus": 22,
+        "manganese": 0.3
+      },
+      "dietary_tags": ["potassium_rich", "natural_energy", "fiber_rich", "vegetarian"]
+    },
+    {
+      "id": "food_023",
+      "name": "Apples",
+      "category": "fruit",
+      "subcategory": "tree_fruit",
+      "per_100g": {
+        "calories": 52,
+        "protein": 0.3,
+        "carbs": 13.8,
+        "fat": 0.2,
+        "fiber": 2.4,
+        "sugar": 10.4,
+        "sodium": 1
+      },
+      "vitamins_per_100g": {
+        "vitamin_c": 4.6,
+        "vitamin_k": 2.2,
+        "vitamin_e": 0.2,
+        "folate": 3
+      },
+      "minerals_per_100g": {
+        "potassium": 107,
+        "phosphorus": 11,
+        "calcium": 6,
+        "magnesium": 5
+      },
+      "dietary_tags": ["fiber_rich", "low_calorie", "antioxidant_rich", "vegetarian"]
+    },
+    {
+      "id": "food_024",
+      "name": "Black Beans",
+      "category": "legume",
+      "subcategory": "bean",
+      "per_100g": {
+        "calories": 132,
+        "protein": 8.9,
+        "carbs": 23.7,
+        "fat": 0.5,
+        "fiber": 8.7,
+        "sugar": 0.3,
+        "sodium": 2
+      },
+      "vitamins_per_100g": {
+        "folate": 149,
+        "thiamine": 0.2,
+        "vitamin_k": 5.6,
+        "niacin": 0.5
+      },
+      "minerals_per_100g": {
+        "iron": 2.9,
+        "magnesium": 70,
+        "phosphorus": 140,
+        "potassium": 355
+      },
+      "dietary_tags": ["high_protein", "high_fiber", "iron_rich", "vegetarian"]
+    },
+    {
+      "id": "food_025",
+      "name": "Chickpeas",
+      "category": "legume",
+      "subcategory": "bean",
+      "per_100g": {
+        "calories": 164,
+        "protein": 8.9,
+        "carbs": 27.4,
+        "fat": 2.6,
+        "fiber": 7.6,
+        "sugar": 4.8,
+        "sodium": 7
+      },
+      "vitamins_per_100g": {
+        "folate": 172,
+        "vitamin_b6": 0.1,
+        "thiamine": 0.1,
+        "niacin": 0.5
+      },
+      "minerals_per_100g": {
+        "iron": 2.9,
+        "phosphorus": 168,
+        "potassium": 291,
+        "magnesium": 48
+      },
+      "dietary_tags": ["high_protein", "high_fiber", "folate_rich", "vegetarian"]
+    },
+    {
+      "id": "food_026",
+      "name": "Lentils, Red",
+      "category": "legume",
+      "subcategory": "lentil",
+      "per_100g": {
+        "calories": 116,
+        "protein": 9.0,
+        "carbs": 20.1,
+        "fat": 0.4,
+        "fiber": 7.9,
+        "sugar": 1.8,
+        "sodium": 2
+      },
+      "vitamins_per_100g": {
+        "folate": 181,
+        "thiamine": 0.2,
+        "vitamin_b6": 0.2,
+        "niacin": 1.1
+      },
+      "minerals_per_100g": {
+        "iron": 3.3,
+        "phosphorus": 180,
+        "potassium": 369,
+        "magnesium": 36
+      },
+      "dietary_tags": ["high_protein", "high_fiber", "iron_rich", "vegetarian"]
+    },
+    {
+      "id": "food_027",
+      "name": "Almonds",
+      "category": "nut",
+      "subcategory": "tree_nut",
+      "per_100g": {
+        "calories": 579,
+        "protein": 21.2,
+        "carbs": 21.6,
+        "fat": 49.9,
+        "fiber": 12.5,
+        "sugar": 4.4,
+        "sodium": 1
+      },
+      "vitamins_per_100g": {
+        "vitamin_e": 25.6,
+        "niacin": 3.6,
+        "riboflavin": 1.0,
+        "folate": 44
+      },
+      "minerals_per_100g": {
+        "magnesium": 270,
+        "phosphorus": 481,
+        "calcium": 269,
+        "iron": 3.7
+      },
+      "dietary_tags": ["healthy_fats", "high_protein", "vitamin_e_rich", "vegetarian"]
+    },
+    {
+      "id": "food_028",
+      "name": "Walnuts",
+      "category": "nut",
+      "subcategory": "tree_nut",
+      "per_100g": {
+        "calories": 654,
+        "protein": 15.2,
+        "carbs": 13.7,
+        "fat": 65.2,
+        "fiber": 6.7,
+        "sugar": 2.6,
+        "sodium": 2
+      },
+      "vitamins_per_100g": {
+        "folate": 98,
+        "vitamin_e": 0.7,
+        "thiamine": 0.3,
+        "vitamin_b6": 0.5
+      },
+      "minerals_per_100g": {
+        "manganese": 3.4,
+        "phosphorus": 346,
+        "magnesium": 158,
+        "copper": 1.6
+      },
+      "dietary_tags": ["omega_3", "healthy_fats", "brain_healthy", "vegetarian"]
+    },
+    {
+      "id": "food_029",
+      "name": "Chia Seeds",
+      "category": "seed",
+      "subcategory": "seed",
+      "per_100g": {
+        "calories": 486,
+        "protein": 16.5,
+        "carbs": 42.1,
+        "fat": 30.7,
+        "fiber": 34.4,
+        "sugar": 0.0,
+        "sodium": 16
+      },
+      "vitamins_per_100g": {
+        "thiamine": 0.6,
+        "niacin": 8.8,
+        "folate": 49,
+        "vitamin_c": 1.6
+      },
+      "minerals_per_100g": {
+        "calcium": 631,
+        "phosphorus": 860,
+        "magnesium": 335,
+        "iron": 7.7
+      },
+      "dietary_tags": ["superfood", "omega_3", "high_fiber", "vegetarian"]
+    },
+    {
+      "id": "food_030",
+      "name": "Flax Seeds",
+      "category": "seed",
+      "subcategory": "seed",
+      "per_100g": {
+        "calories": 534,
+        "protein": 18.3,
+        "carbs": 28.9,
+        "fat": 42.2,
+        "fiber": 27.3,
+        "sugar": 1.6,
+        "sodium": 30
+      },
+      "vitamins_per_100g": {
+        "thiamine": 1.6,
+        "folate": 87,
+        "vitamin_b6": 0.5,
+        "niacin": 3.1
+      },
+      "minerals_per_100g": {
+        "magnesium": 392,
+        "phosphorus": 642,
+        "potassium": 813,
+        "iron": 5.7
+      },
+      "dietary_tags": ["omega_3", "high_fiber", "lignan_rich", "vegetarian"]
+    },
+    {
+      "id": "food_031",
+      "name": "Olive Oil, Extra Virgin",
+      "category": "fat",
+      "subcategory": "oil",
+      "per_100g": {
+        "calories": 884,
+        "protein": 0.0,
+        "carbs": 0.0,
+        "fat": 100.0,
+        "fiber": 0.0,
+        "sugar": 0.0,
+        "sodium": 2
+      },
+      "vitamins_per_100g": {
+        "vitamin_e": 14.4,
+        "vitamin_k": 60.2
+      },
+      "minerals_per_100g": {
+        "iron": 0.6,
+        "calcium": 1,
+        "potassium": 1,
+        "sodium": 2
+      },
+      "dietary_tags": ["healthy_fats", "monounsaturated", "antioxidants", "vegetarian"]
+    },
+    {
+      "id": "food_032",
+      "name": "Coconut Oil",
+      "category": "fat",
+      "subcategory": "oil",
+      "per_100g": {
+        "calories": 862,
+        "protein": 0.0,
+        "carbs": 0.0,
+        "fat": 100.0,
+        "fiber": 0.0,
+        "sugar": 0.0,
+        "sodium": 0
+      },
+      "vitamins_per_100g": {
+        "vitamin_e": 0.1,
+        "vitamin_k": 0.5
+      },
+      "minerals_per_100g": {
+        "iron": 0.0,
+        "calcium": 0,
+        "potassium": 0,
+        "phosphorus": 0
+      },
+      "dietary_tags": ["saturated_fat", "mct_oil", "high_heat_cooking", "vegetarian"]
+    },
+    {
+      "id": "food_033",
+      "name": "Cheddar Cheese",
+      "category": "dairy",
+      "subcategory": "cheese",
+      "per_100g": {
+        "calories": 403,
+        "protein": 25.0,
+        "carbs": 1.3,
+        "fat": 33.3,
+        "fiber": 0.0,
+        "sugar": 0.5,
+        "sodium": 621
+      },
+      "vitamins_per_100g": {
+        "vitamin_a": 1242,
+        "vitamin_b12": 0.8,
+        "riboflavin": 0.4,
+        "folate": 18
+      },
+      "minerals_per_100g": {
+        "calcium": 721,
+        "phosphorus": 512,
+        "selenium": 13.9,
+        "zinc": 3.1
+      },
+      "dietary_tags": ["high_protein", "calcium_rich", "high_fat", "vegetarian"]
+    },
+    {
+      "id": "food_034",
+      "name": "Milk, 2% Fat",
+      "category": "dairy",
+      "subcategory": "milk",
+      "per_100g": {
+        "calories": 50,
+        "protein": 3.3,
+        "carbs": 4.8,
+        "fat": 2.0,
+        "fiber": 0.0,
+        "sugar": 4.8,
+        "sodium": 44
+      },
+      "vitamins_per_100g": {
+        "vitamin_b12": 0.5,
+        "vitamin_a": 205,
+        "riboflavin": 0.2,
+        "folate": 5
+      },
+      "minerals_per_100g": {
+        "calcium": 125,
+        "phosphorus": 95,
+        "potassium": 150,
+        "selenium": 2.7
+      },
+      "dietary_tags": ["calcium_rich", "protein_source", "vitamin_d", "vegetarian"]
+    },
+    {
+      "id": "food_035",
+      "name": "Mushrooms, Button",
+      "category": "vegetable",
+      "subcategory": "mushroom",
+      "per_100g": {
+        "calories": 22,
+        "protein": 3.1,
+        "carbs": 3.3,
+        "fat": 0.3,
+        "fiber": 1.0,
+        "sugar": 2.0,
+        "sodium": 5
+      },
+      "vitamins_per_100g": {
+        "niacin": 3.6,
+        "riboflavin": 0.4,
+        "folate": 17,
+        "vitamin_d": 0.2
+      },
+      "minerals_per_100g": {
+        "potassium": 318,
+        "phosphorus": 86,
+        "selenium": 9.3,
+        "copper": 0.3
+      },
+      "dietary_tags": ["low_calorie", "umami", "selenium_rich", "vegetarian"]
+    },
+    {
+      "id": "food_036",
+      "name": "Tomatoes",
+      "category": "fruit",
+      "subcategory": "fruit_vegetable",
+      "per_100g": {
+        "calories": 18,
+        "protein": 0.9,
+        "carbs": 3.9,
+        "fat": 0.2,
+        "fiber": 1.2,
+        "sugar": 2.6,
+        "sodium": 5
+      },
+      "vitamins_per_100g": {
+        "vitamin_c": 13.7,
+        "vitamin_k": 7.9,
+        "folate": 15,
+        "vitamin_a": 833
+      },
+      "minerals_per_100g": {
+        "potassium": 237,
+        "phosphorus": 24,
+        "magnesium": 11,
+        "calcium": 10
+      },
+      "dietary_tags": ["lycopene_rich", "low_calorie", "antioxidant_rich", "vegetarian"]
+    },
+    {
+      "id": "food_037",
+      "name": "Cucumber",
+      "category": "vegetable",
+      "subcategory": "gourd",
+      "per_100g": {
+        "calories": 16,
+        "protein": 0.7,
+        "carbs": 4.0,
+        "fat": 0.1,
+        "fiber": 0.5,
+        "sugar": 1.7,
+        "sodium": 2
+      },
+      "vitamins_per_100g": {
+        "vitamin_k": 16.4,
+        "vitamin_c": 2.8,
+        "folate": 7,
+        "vitamin_a": 105
+      },
+      "minerals_per_100g": {
+        "potassium": 147,
+        "phosphorus": 24,
+        "magnesium": 13,
+        "calcium": 16
+      },
+      "dietary_tags": ["hydrating", "low_calorie", "refreshing", "vegetarian"]
+    },
+    {
+      "id": "food_038",
+      "name": "Zucchini",
+      "category": "vegetable",
+      "subcategory": "squash",
+      "per_100g": {
+        "calories": 17,
+        "protein": 1.2,
+        "carbs": 3.1,
+        "fat": 0.3,
+        "fiber": 1.0,
+        "sugar": 2.5,
+        "sodium": 8
+      },
+      "vitamins_per_100g": {
+        "vitamin_c": 17.9,
+        "folate": 24,
+        "vitamin_a": 200,
+        "vitamin_k": 4.3
+      },
+      "minerals_per_100g": {
+        "potassium": 261,
+        "phosphorus": 38,
+        "magnesium": 18,
+        "calcium": 16
+      },
+      "dietary_tags": ["low_calorie", "versatile", "hydrating", "vegetarian"]
+    },
+    {
+      "id": "food_039",
+      "name": "Asparagus",
+      "category": "vegetable",
+      "subcategory": "stem_vegetable",
+      "per_100g": {
+        "calories": 20,
+        "protein": 2.2,
+        "carbs": 3.9,
+        "fat": 0.1,
+        "fiber": 2.1,
+        "sugar": 1.9,
+        "sodium": 2
+      },
+      "vitamins_per_100g": {
+        "folate": 134,
+        "vitamin_k": 41.6,
+        "vitamin_c": 5.6,
+        "vitamin_a": 756
+      },
+      "minerals_per_100g": {
+        "potassium": 202,
+        "phosphorus": 52,
+        "iron": 2.1,
+        "calcium": 24
+      },
+      "dietary_tags": ["folate_rich", "low_calorie", "detoxifying", "vegetarian"]
+    },
+    {
+      "id": "food_040",
+      "name": "Green Beans",
+      "category": "vegetable",
+      "subcategory": "legume_vegetable",
+      "per_100g": {
+        "calories": 31,
+        "protein": 1.8,
+        "carbs": 7.0,
+        "fat": 0.2,
+        "fiber": 2.7,
+        "sugar": 3.3,
+        "sodium": 6
+      },
+      "vitamins_per_100g": {
+        "vitamin_c": 12.2,
+        "vitamin_k": 43.0,
+        "folate": 33,
+        "vitamin_a": 690
+      },
+      "minerals_per_100g": {
+        "potassium": 211,
+        "phosphorus": 38,
+        "magnesium": 25,
+        "calcium": 37
+      },
+      "dietary_tags": ["fiber_rich", "low_calorie", "vitamin_k_rich", "vegetarian"]
+    },
+    {
+      "id": "food_041",
+      "name": "Cauliflower",
+      "category": "vegetable",
+      "subcategory": "cruciferous",
+      "per_100g": {
+        "calories": 25,
+        "protein": 1.9,
+        "carbs": 5.0,
+        "fat": 0.3,
+        "fiber": 2.0,
+        "sugar": 1.9,
+        "sodium": 30
+      },
+      "vitamins_per_100g": {
+        "vitamin_c": 48.2,
+        "vitamin_k": 15.5,
+        "folate": 57,
+        "vitamin_b6": 0.2
+      },
+      "minerals_per_100g": {
+        "potassium": 299,
+        "phosphorus": 44,
+        "magnesium": 15,
+        "calcium": 22
+      },
+      "dietary_tags": ["low_carb", "versatile", "vitamin_c_rich", "vegetarian"]
+    },
+    {
+      "id": "food_042",
+      "name": "Brussels Sprouts",
+      "category": "vegetable",
+      "subcategory": "cruciferous",
+      "per_100g": {
+        "calories": 43,
+        "protein": 3.4,
+        "carbs": 8.9,
+        "fat": 0.3,
+        "fiber": 3.8,
+        "sugar": 2.2,
+        "sodium": 25
+      },
+      "vitamins_per_100g": {
+        "vitamin_c": 85.0,
+        "vitamin_k": 177.0,
+        "folate": 61,
+        "vitamin_a": 754
+      },
+      "minerals_per_100g": {
+        "potassium": 389,
+        "phosphorus": 69,
+        "iron": 1.4,
+        "calcium": 42
+      },
+      "dietary_tags": ["high_fiber", "vitamin_rich", "antioxidant_rich", "vegetarian"]
+    },
+    {
+      "id": "food_043",
+      "name": "Edamame",
+      "category": "legume",
+      "subcategory": "soybean",
+      "per_100g": {
+        "calories": 121,
+        "protein": 11.9,
+        "carbs": 8.9,
+        "fat": 5.2,
+        "fiber": 5.2,
+        "sugar": 2.2,
+        "sodium": 6
+      },
+      "vitamins_per_100g": {
+        "folate": 311,
+        "vitamin_k": 26.7,
+        "vitamin_c": 6.1,
+        "thiamine": 0.2
+      },
+      "minerals_per_100g": {
+        "iron": 2.3,
+        "magnesium": 64,
+        "phosphorus": 169,
+        "potassium": 436
+      },
+      "dietary_tags": ["complete_protein", "folate_rich", "fiber_rich", "vegetarian"]
+    },
+    {
+      "id": "food_044",
+      "name": "Peas, Green",
+      "category": "vegetable",
+      "subcategory": "legume_vegetable",
+      "per_100g": {
+        "calories": 81,
+        "protein": 5.4,
+        "carbs": 14.5,
+        "fat": 0.4,
+        "fiber": 5.7,
+        "sugar": 5.7,
+        "sodium": 5
+      },
+      "vitamins_per_100g": {
+        "vitamin_c": 40.0,
+        "vitamin_k": 24.8,
+        "folate": 65,
+        "thiamine": 0.3
+      },
+      "minerals_per_100g": {
+        "potassium": 244,
+        "phosphorus": 108,
+        "iron": 1.5,
+        "magnesium": 33
+      },
+      "dietary_tags": ["high_protein", "fiber_rich", "vitamin_rich", "vegetarian"]
+    },
+    {
+      "id": "food_045",
+      "name": "Corn, Sweet",
+      "category": "vegetable",
+      "subcategory": "grain_vegetable",
+      "per_100g": {
+        "calories": 86,
+        "protein": 3.3,
+        "carbs": 18.7,
+        "fat": 1.4,
+        "fiber": 2.0,
+        "sugar": 6.3,
+        "sodium": 15
+      },
+      "vitamins_per_100g": {
+        "vitamin_c": 6.8,
+        "thiamine": 0.2,
+        "folate": 42,
+        "niacin": 1.8
+      },
+      "minerals_per_100g": {
+        "potassium": 287,
+        "phosphorus": 89,
+        "magnesium": 37,
+        "iron": 0.5
+      },
+      "dietary_tags": ["fiber_source", "natural_sweetness", "antioxidants", "vegetarian"]
+    },
+    {
+      "id": "food_046",
+      "name": "Cod, Atlantic",
+      "category": "protein",
+      "subcategory": "white_fish",
+      "per_100g": {
+        "calories": 82,
+        "protein": 17.8,
+        "carbs": 0.0,
+        "fat": 0.7,
+        "fiber": 0.0,
+        "sugar": 0.0,
+        "sodium": 54
+      },
+      "vitamins_per_100g": {
+        "vitamin_b12": 0.9,
+        "niacin": 2.1,
+        "vitamin_b6": 0.2,
+        "folate": 7
+      },
+      "minerals_per_100g": {
+        "selenium": 33.1,
+        "phosphorus": 203,
+        "potassium": 413,
+        "iodine": 170
+      },
+      "dietary_tags": ["lean_protein", "low_fat", "iodine_rich", "gluten_free"]
+    },
+    {
+      "id": "food_047",
+      "name": "Tuna, Yellowfin",
+      "category": "protein",
+      "subcategory": "fish",
+      "per_100g": {
+        "calories": 109,
+        "protein": 24.4,
+        "carbs": 0.0,
+        "fat": 0.5,
+        "fiber": 0.0,
+        "sugar": 0.0,
+        "sodium": 39
+      },
+      "vitamins_per_100g": {
+        "niacin": 18.8,
+        "vitamin_b6": 0.9,
+        "vitamin_b12": 9.4,
+        "thiamine": 0.2
+      },
+      "minerals_per_100g": {
+        "selenium": 90.6,
+        "phosphorus": 254,
+        "potassium": 444,
+        "magnesium": 30
+      },
+      "dietary_tags": ["very_high_protein", "low_fat", "selenium_rich", "gluten_free"]
+    },
+    {
+      "id": "food_048",
+      "name": "Lamb, Leg",
+      "category": "protein",
+      "subcategory": "red_meat",
+      "per_100g": {
+        "calories": 258,
+        "protein": 25.6,
+        "carbs": 0.0,
+        "fat": 16.5,
+        "fiber": 0.0,
+        "sugar": 0.0,
+        "sodium": 72
+      },
+      "vitamins_per_100g": {
+        "vitamin_b12": 2.6,
+        "niacin": 6.2,
+        "vitamin_b6": 0.1,
+        "riboflavin": 0.2
+      },
+      "minerals_per_100g": {
+        "zinc": 4.5,
+        "iron": 1.9,
+        "selenium": 26.4,
+        "phosphorus": 188
+      },
+      "dietary_tags": ["high_protein", "zinc_rich", "iron_source", "gluten_free"]
+    },
+    {
+      "id": "food_049",
+      "name": "Pork Tenderloin",
+      "category": "protein",
+      "subcategory": "pork",
+      "per_100g": {
+        "calories": 143,
+        "protein": 26.0,
+        "carbs": 0.0,
+        "fat": 3.5,
+        "fiber": 0.0,
+        "sugar": 0.0,
+        "sodium": 58
+      },
+      "vitamins_per_100g": {
+        "thiamine": 1.4,
+        "niacin": 6.3,
+        "vitamin_b6": 0.7,
+        "vitamin_b12": 0.7
+      },
+      "minerals_per_100g": {
+        "selenium": 38.1,
+        "phosphorus": 246,
+        "potassium": 423,
+        "zinc": 2.4
+      },
+      "dietary_tags": ["lean_protein", "thiamine_rich", "low_fat", "gluten_free"]
+    },
+    {
+      "id": "food_050",
+      "name": "Turkey Breast",
+      "category": "protein",
+      "subcategory": "poultry",
+      "per_100g": {
+        "calories": 135,
+        "protein": 30.1,
+        "carbs": 0.0,
+        "fat": 0.7,
+        "fiber": 0.0,
+        "sugar": 0.0,
+        "sodium": 63
+      },
+      "vitamins_per_100g": {
+        "niacin": 11.8,
+        "vitamin_b6": 0.8,
+        "vitamin_b12": 1.6,
+        "riboflavin": 0.1
+      },
+      "minerals_per_100g": {
+        "selenium": 30.9,
+        "phosphorus": 230,
+        "potassium": 417,
+        "zinc": 1.7
+      },
+      "dietary_tags": ["very_lean", "very_high_protein", "low_fat", "gluten_free"]
+    }
+  ]
+}

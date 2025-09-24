@@ -1,0 +1,341 @@
+{
+  "foods": [
+    {
+      "id": "food_001",
+      "name": "Chicken Breast, Grilled",
+      "brand": null,
+      "category": "protein",
+      "subcategory": "poultry",
+      "barcode": null,
+      "common_names": ["grilled chicken", "chicken breast", "chicken"],
+      "serving_options": [
+        {
+          "id": "serving_001",
+          "description": "100g",
+          "weight_g": 100,
+          "calories": 165,
+          "macros": {
+            "protein": 31.0,
+            "carbs": 0.0,
+            "fat": 3.6,
+            "fiber": 0.0,
+            "sugar": 0.0
+          }
+        },
+        {
+          "id": "serving_002", 
+          "description": "1 piece (85g)",
+          "weight_g": 85,
+          "calories": 140,
+          "macros": {
+            "protein": 26.4,
+            "carbs": 0.0,
+            "fat": 3.1,
+            "fiber": 0.0,
+            "sugar": 0.0
+          }
+        },
+        {
+          "id": "serving_003",
+          "description": "1 cup diced (140g)",
+          "weight_g": 140,
+          "calories": 231,
+          "macros": {
+            "protein": 43.4,
+            "carbs": 0.0,
+            "fat": 5.0,
+            "fiber": 0.0,
+            "sugar": 0.0
+          }
+        }
+      ],
+      "micronutrients_per_100g": {
+        "vitamins": {
+          "vitamin_b6": 0.9,
+          "niacin": 14.8,
+          "riboflavin": 0.1,
+          "thiamine": 0.1
+        },
+        "minerals": {
+          "phosphorus": 220,
+          "selenium": 27.6,
+          "potassium": 256,
+          "sodium": 74
+        }
+      },
+      "health_benefits": ["high_protein", "low_fat", "muscle_building"],
+      "allergens": [],
+      "tags": ["lean_protein", "versatile", "meal_prep_friendly"]
+    },
+    {
+      "id": "food_002",
+      "name": "Quinoa, Cooked",
+      "brand": null,
+      "category": "grain",
+      "subcategory": "whole_grain",
+      "barcode": null,
+      "common_names": ["quinoa", "cooked quinoa"],
+      "serving_options": [
+        {
+          "id": "serving_004",
+          "description": "100g",
+          "weight_g": 100,
+          "calories": 120,
+          "macros": {
+            "protein": 4.4,
+            "carbs": 21.8,
+            "fat": 1.9,
+            "fiber": 2.8,
+            "sugar": 0.9
+          }
+        },
+        {
+          "id": "serving_005",
+          "description": "1 cup (185g)",
+          "weight_g": 185,
+          "calories": 222,
+          "macros": {
+            "protein": 8.1,
+            "carbs": 40.3,
+            "fat": 3.5,
+            "fiber": 5.2,
+            "sugar": 1.7
+          }
+        }
+      ],
+      "micronutrients_per_100g": {
+        "vitamins": {
+          "folate": 42,
+          "vitamin_e": 0.6,
+          "thiamine": 0.1,
+          "riboflavin": 0.1
+        },
+        "minerals": {
+          "manganese": 0.6,
+          "phosphorus": 152,
+          "magnesium": 64,
+          "iron": 1.5,
+          "zinc": 1.1
+        }
+      },
+      "health_benefits": ["complete_protein", "gluten_free", "high_fiber"],
+      "allergens": [],
+      "tags": ["superfood", "gluten_free", "complete_protein"]
+    },
+    {
+      "id": "food_003",
+      "name": "Broccoli, Raw",
+      "brand": null,
+      "category": "vegetable",
+      "subcategory": "cruciferous",
+      "barcode": null,
+      "common_names": ["broccoli", "fresh broccoli"],
+      "serving_options": [
+        {
+          "id": "serving_006",
+          "description": "100g",
+          "weight_g": 100,
+          "calories": 34,
+          "macros": {
+            "protein": 2.8,
+            "carbs": 6.6,
+            "fat": 0.4,
+            "fiber": 2.6,
+            "sugar": 1.5
+          }
+        },
+        {
+          "id": "serving_007",
+          "description": "1 cup chopped (91g)",
+          "weight_g": 91,
+          "calories": 31,
+          "macros": {
+            "protein": 2.5,
+            "carbs": 6.0,
+            "fat": 0.4,
+            "fiber": 2.4,
+            "sugar": 1.4
+          }
+        }
+      ],
+      "micronutrients_per_100g": {
+        "vitamins": {
+          "vitamin_c": 89.2,
+          "vitamin_k": 101.6,
+          "folate": 63,
+          "vitamin_a": 623
+        },
+        "minerals": {
+          "potassium": 316,
+          "phosphorus": 66,
+          "calcium": 47,
+          "iron": 0.7
+        }
+      },
+      "health_benefits": ["high_vitamin_c", "antioxidants", "cancer_protective"],
+      "allergens": [],
+      "tags": ["superfood", "low_calorie", "nutrient_dense"]
+    },
+    {
+      "id": "food_004",
+      "name": "Greek Yogurt, Plain",
+      "brand": "Fage",
+      "category": "dairy",
+      "subcategory": "yogurt",
+      "barcode": "052000321265",
+      "common_names": ["greek yogurt", "yogurt", "plain yogurt"],
+      "serving_options": [
+        {
+          "id": "serving_008",
+          "description": "100g",
+          "weight_g": 100,
+          "calories": 59,
+          "macros": {
+            "protein": 10.0,
+            "carbs": 3.6,
+            "fat": 0.4,
+            "fiber": 0.0,
+            "sugar": 3.6
+          }
+        },
+        {
+          "id": "serving_009",
+          "description": "1 cup (245g)",
+          "weight_g": 245,
+          "calories": 144,
+          "macros": {
+            "protein": 24.5,
+            "carbs": 8.8,
+            "fat": 1.0,
+            "fiber": 0.0,
+            "sugar": 8.8
+          }
+        },
+        {
+          "id": "serving_010",
+          "description": "1 container (170g)",
+          "weight_g": 170,
+          "calories": 100,
+          "macros": {
+            "protein": 17.0,
+            "carbs": 6.1,
+            "fat": 0.7,
+            "fiber": 0.0,
+            "sugar": 6.1
+          }
+        }
+      ],
+      "micronutrients_per_100g": {
+        "vitamins": {
+          "vitamin_b12": 0.5,
+          "riboflavin": 0.3,
+          "vitamin_a": 27
+        },
+        "minerals": {
+          "calcium": 110,
+          "phosphorus": 135,
+          "potassium": 141,
+          "sodium": 36
+        }
+      },
+      "health_benefits": ["high_protein", "probiotics", "calcium_source"],
+      "allergens": ["milk"],
+      "tags": ["high_protein", "low_fat", "probiotic"]
+    },
+    {
+      "id": "food_005",
+      "name": "Salmon, Atlantic",
+      "brand": null,
+      "category": "protein",
+      "subcategory": "fish",
+      "barcode": null,
+      "common_names": ["salmon", "atlantic salmon", "fish"],
+      "serving_options": [
+        {
+          "id": "serving_011",
+          "description": "100g",
+          "weight_g": 100,
+          "calories": 208,
+          "macros": {
+            "protein": 25.4,
+            "carbs": 0.0,
+            "fat": 12.4,
+            "fiber": 0.0,
+            "sugar": 0.0
+          }
+        },
+        {
+          "id": "serving_012",
+          "description": "1 fillet (150g)",
+          "weight_g": 150,
+          "calories": 312,
+          "macros": {
+            "protein": 38.1,
+            "carbs": 0.0,
+            "fat": 18.6,
+            "fiber": 0.0,
+            "sugar": 0.0
+          }
+        }
+      ],
+      "micronutrients_per_100g": {
+        "vitamins": {
+          "vitamin_d": 11.0,
+          "vitamin_b12": 3.05,
+          "niacin": 8.0,
+          "vitamin_b6": 0.6
+        },
+        "minerals": {
+          "selenium": 36.5,
+          "phosphorus": 240,
+          "potassium": 384,
+          "magnesium": 28
+        },
+        "fatty_acids": {
+          "omega_3_total": 2018,
+          "dha": 1104,
+          "epa": 690,
+          "omega_6_total": 341
+        }
+      },
+      "health_benefits": ["omega_3_fatty_acids", "heart_healthy", "brain_health"],
+      "allergens": ["fish"],
+      "tags": ["omega_3", "heart_healthy", "premium_protein"]
+    }
+  ],
+  "search_indexes": {
+    "by_category": {
+      "protein": ["food_001", "food_004", "food_005"],
+      "grain": ["food_002"],
+      "vegetable": ["food_003"],
+      "dairy": ["food_004"]
+    },
+    "by_common_names": {
+      "chicken": ["food_001"],
+      "quinoa": ["food_002"],
+      "broccoli": ["food_003"],
+      "yogurt": ["food_004"],
+      "salmon": ["food_005"]
+    },
+    "by_dietary_tags": {
+      "high_protein": ["food_001", "food_004", "food_005"],
+      "low_calorie": ["food_003"],
+      "gluten_free": ["food_001", "food_002", "food_003", "food_004", "food_005"],
+      "dairy_free": ["food_001", "food_002", "food_003", "food_005"]
+    }
+  },
+  "portion_conversion_table": {
+    "weight_conversions": {
+      "1_cup_chicken_diced": 140,
+      "1_cup_quinoa_cooked": 185,
+      "1_cup_broccoli_chopped": 91,
+      "1_cup_yogurt": 245
+    },
+    "common_portions": {
+      "protein": ["100g", "1_piece", "1_fillet", "1_cup_diced"],
+      "grain": ["100g", "1_cup_cooked", "0.5_cup_cooked"],
+      "vegetable": ["100g", "1_cup_chopped", "1_cup_raw"],
+      "dairy": ["100g", "1_cup", "1_container"]
+    }
+  }
+}

@@ -1,0 +1,550 @@
+{
+  "recipes": [
+    {
+      "id": "recipe_001",
+      "name": "Mediterranean Chicken Bowl",
+      "image": "images/mediterranean_chicken_bowl.jpg",
+      "cuisine": "mediterranean",
+      "difficulty": "easy",
+      "prep_time": 15,
+      "cook_time": 20,
+      "total_time": 35,
+      "servings": 4,
+      "rating": 4.7,
+      "rating_count": 234,
+      "description": "Fresh and healthy Mediterranean-style chicken bowl with quinoa, vegetables, and tzatziki",
+      "tags": ["healthy", "protein_rich", "gluten_free"],
+      "occasions": ["lunch", "dinner", "meal_prep"],
+      "dietary_tags": ["gluten_free", "high_protein"],
+      "ingredients": [
+        {
+          "id": "ing_001",
+          "name": "chicken breast",
+          "amount": 1.5,
+          "unit": "lbs",
+          "category": "protein",
+          "prep_note": "boneless, skinless"
+        },
+        {
+          "id": "ing_002", 
+          "name": "quinoa",
+          "amount": 1,
+          "unit": "cup",
+          "category": "grain",
+          "prep_note": "rinsed"
+        },
+        {
+          "id": "ing_003",
+          "name": "cucumber",
+          "amount": 1,
+          "unit": "large",
+          "category": "vegetable",
+          "prep_note": "diced"
+        },
+        {
+          "id": "ing_004",
+          "name": "cherry tomatoes",
+          "amount": 1,
+          "unit": "cup",
+          "category": "vegetable",
+          "prep_note": "halved"
+        },
+        {
+          "id": "ing_005",
+          "name": "red onion",
+          "amount": 0.5,
+          "unit": "medium",
+          "category": "vegetable",
+          "prep_note": "diced"
+        },
+        {
+          "id": "ing_006",
+          "name": "olive oil",
+          "amount": 3,
+          "unit": "tbsp",
+          "category": "fat",
+          "prep_note": "extra virgin"
+        },
+        {
+          "id": "ing_007",
+          "name": "lemon",
+          "amount": 1,
+          "unit": "large",
+          "category": "citrus",
+          "prep_note": "juiced"
+        },
+        {
+          "id": "ing_008",
+          "name": "greek yogurt",
+          "amount": 0.5,
+          "unit": "cup",
+          "category": "dairy",
+          "prep_note": "plain"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "phase": "prep",
+          "instruction": "Season chicken breast with salt, pepper, and 1 tbsp olive oil. Let marinate for 10 minutes.",
+          "time": 10,
+          "tips": "Room temperature chicken cooks more evenly",
+          "equipment": ["cutting_board", "knife"]
+        },
+        {
+          "step": 2,
+          "phase": "prep",
+          "instruction": "Cook quinoa according to package directions. Set aside to cool.",
+          "time": 15,
+          "tips": "Rinse quinoa before cooking to remove bitterness",
+          "equipment": ["medium_saucepan", "fine_mesh_strainer"]
+        },
+        {
+          "step": 3,
+          "phase": "cooking",
+          "instruction": "Heat a large skillet over medium-high heat. Cook chicken for 6-7 minutes per side until internal temperature reaches 165°F.",
+          "time": 14,
+          "timer": true,
+          "tips": "Don't move the chicken too early - let it develop a golden crust",
+          "equipment": ["large_skillet", "meat_thermometer"]
+        },
+        {
+          "step": 4,
+          "phase": "cooking",
+          "instruction": "Let chicken rest for 5 minutes, then slice into strips.",
+          "time": 5,
+          "tips": "Resting helps redistribute juices for tender chicken",
+          "equipment": ["cutting_board", "knife"]
+        },
+        {
+          "step": 5,
+          "phase": "assembly",
+          "instruction": "In a large bowl, combine cooled quinoa, cucumber, tomatoes, and red onion.",
+          "time": 5,
+          "tips": "Make sure quinoa is cooled to avoid wilting the vegetables",
+          "equipment": ["large_mixing_bowl"]
+        },
+        {
+          "step": 6,
+          "phase": "assembly", 
+          "instruction": "Whisk together remaining olive oil, lemon juice, salt and pepper for dressing.",
+          "time": 2,
+          "tips": "Taste and adjust seasoning as needed",
+          "equipment": ["small_bowl", "whisk"]
+        },
+        {
+          "step": 7,
+          "phase": "assembly",
+          "instruction": "Toss quinoa mixture with dressing. Divide into bowls and top with sliced chicken and a dollop of Greek yogurt.",
+          "time": 3,
+          "tips": "Serve immediately for best texture",
+          "equipment": ["serving_bowls"]
+        }
+      ],
+      "nutrition_per_serving": {
+        "calories": 385,
+        "protein": 32,
+        "carbs": 28,
+        "fat": 16,
+        "fiber": 4,
+        "sugar": 6,
+        "sodium": 320
+      },
+      "equipment": ["large_skillet", "medium_saucepan", "cutting_board", "knife", "mixing_bowls"],
+      "storage": "Refrigerate for up to 3 days. Best served fresh.",
+      "substitutions": [
+        {
+          "ingredient": "chicken breast",
+          "alternatives": ["chicken thighs", "salmon", "tofu"]
+        },
+        {
+          "ingredient": "quinoa", 
+          "alternatives": ["brown rice", "cauliflower rice", "farro"]
+        },
+        {
+          "ingredient": "greek yogurt",
+          "alternatives": ["hummus", "avocado", "tahini"]
+        }
+      ],
+      "cross_journey_data": {
+        "meal_plan_compatible": true,
+        "grocery_list_ready": true,
+        "tracking_enabled": true,
+        "cooking_guidance": true
+      }
+    },
+    {
+      "id": "recipe_002",
+      "name": "Quick Veggie Stir Fry",
+      "image": "images/veggie_stir_fry.jpg",
+      "cuisine": "asian",
+      "difficulty": "easy",
+      "prep_time": 10,
+      "cook_time": 8,
+      "total_time": 18,
+      "servings": 2,
+      "rating": 4.3,
+      "rating_count": 156,
+      "description": "Colorful and nutritious vegetable stir fry ready in under 20 minutes",
+      "tags": ["quick", "vegetarian", "low_calorie"],
+      "occasions": ["quick_lunch", "weeknight_dinner"],
+      "dietary_tags": ["vegetarian", "vegan", "low_calorie"],
+      "ingredients": [
+        {
+          "id": "ing_009",
+          "name": "broccoli",
+          "amount": 2,
+          "unit": "cups",
+          "category": "vegetable",
+          "prep_note": "cut into florets"
+        },
+        {
+          "id": "ing_010",
+          "name": "bell pepper",
+          "amount": 1,
+          "unit": "large",
+          "category": "vegetable", 
+          "prep_note": "sliced"
+        },
+        {
+          "id": "ing_011",
+          "name": "carrots",
+          "amount": 2,
+          "unit": "medium",
+          "category": "vegetable",
+          "prep_note": "julienned"
+        },
+        {
+          "id": "ing_012",
+          "name": "snap peas",
+          "amount": 1,
+          "unit": "cup",
+          "category": "vegetable",
+          "prep_note": "trimmed"
+        },
+        {
+          "id": "ing_013",
+          "name": "garlic",
+          "amount": 3,
+          "unit": "cloves",
+          "category": "aromatic",
+          "prep_note": "minced"
+        },
+        {
+          "id": "ing_014",
+          "name": "ginger",
+          "amount": 1,
+          "unit": "tbsp",
+          "category": "aromatic",
+          "prep_note": "minced fresh"
+        },
+        {
+          "id": "ing_015",
+          "name": "soy sauce",
+          "amount": 2,
+          "unit": "tbsp",
+          "category": "sauce",
+          "prep_note": "low sodium"
+        },
+        {
+          "id": "ing_016",
+          "name": "sesame oil",
+          "amount": 1,
+          "unit": "tsp",
+          "category": "fat",
+          "prep_note": "toasted"
+        },
+        {
+          "id": "ing_017",
+          "name": "vegetable oil",
+          "amount": 1,
+          "unit": "tbsp",
+          "category": "fat",
+          "prep_note": "for cooking"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "phase": "prep",
+          "instruction": "Prepare all vegetables by washing, cutting, and arranging in order of cooking time (hardest vegetables first).",
+          "time": 8,
+          "tips": "Mise en place is key for successful stir frying",
+          "equipment": ["cutting_board", "knife"]
+        },
+        {
+          "step": 2,
+          "phase": "cooking",
+          "instruction": "Heat vegetable oil in a large wok or skillet over high heat until shimmering.",
+          "time": 2,
+          "tips": "High heat is essential for proper stir frying",
+          "equipment": ["wok", "wooden_spoon"]
+        },
+        {
+          "step": 3,
+          "phase": "cooking",
+          "instruction": "Add garlic and ginger, stir fry for 30 seconds until fragrant.",
+          "time": 1,
+          "tips": "Don't let garlic burn or it will taste bitter",
+          "equipment": ["wok", "wooden_spoon"]
+        },
+        {
+          "step": 4,
+          "phase": "cooking",
+          "instruction": "Add carrots and broccoli first, stir fry for 2 minutes.",
+          "time": 2,
+          "timer": true,
+          "tips": "These take longest to cook so they go in first",
+          "equipment": ["wok", "wooden_spoon"]
+        },
+        {
+          "step": 5,
+          "phase": "cooking",
+          "instruction": "Add bell peppers and snap peas, stir fry for 2 more minutes.",
+          "time": 2,
+          "timer": true,
+          "tips": "Keep vegetables moving constantly for even cooking",
+          "equipment": ["wok", "wooden_spoon"]
+        },
+        {
+          "step": 6,
+          "phase": "finishing",
+          "instruction": "Add soy sauce and sesame oil, toss everything together for 1 minute. Vegetables should be crisp-tender.",
+          "time": 1,
+          "tips": "Add sauce at the end to prevent burning",
+          "equipment": ["wok", "wooden_spoon"]
+        }
+      ],
+      "nutrition_per_serving": {
+        "calories": 145,
+        "protein": 5,
+        "carbs": 18,
+        "fat": 8,
+        "fiber": 6,
+        "sugar": 10,
+        "sodium": 580
+      },
+      "equipment": ["wok", "cutting_board", "knife", "wooden_spoon"],
+      "storage": "Best served immediately. Can be refrigerated for 1-2 days.",
+      "substitutions": [
+        {
+          "ingredient": "broccoli",
+          "alternatives": ["cauliflower", "green beans", "asparagus"]
+        },
+        {
+          "ingredient": "soy sauce",
+          "alternatives": ["tamari", "coconut_aminos", "liquid_aminos"]
+        }
+      ],
+      "cross_journey_data": {
+        "meal_plan_compatible": true,
+        "grocery_list_ready": true,
+        "tracking_enabled": true,
+        "cooking_guidance": true
+      }
+    },
+    {
+      "id": "recipe_003",
+      "name": "Classic Margherita Pizza",
+      "image": "images/margherita_pizza.jpg", 
+      "cuisine": "italian",
+      "difficulty": "medium",
+      "prep_time": 90,
+      "cook_time": 12,
+      "total_time": 102,
+      "servings": 4,
+      "rating": 4.8,
+      "rating_count": 412,
+      "description": "Authentic Neapolitan-style pizza with fresh mozzarella, tomatoes, and basil",
+      "tags": ["authentic", "vegetarian", "comfort_food"],
+      "occasions": ["dinner", "party", "weekend"],
+      "dietary_tags": ["vegetarian"],
+      "ingredients": [
+        {
+          "id": "ing_018",
+          "name": "pizza dough",
+          "amount": 1,
+          "unit": "lb",
+          "category": "carb",
+          "prep_note": "store-bought or homemade"
+        },
+        {
+          "id": "ing_019",
+          "name": "crushed tomatoes",
+          "amount": 0.5,
+          "unit": "cup",
+          "category": "sauce",
+          "prep_note": "high quality canned"
+        },
+        {
+          "id": "ing_020",
+          "name": "fresh mozzarella",
+          "amount": 8,
+          "unit": "oz",
+          "category": "dairy",
+          "prep_note": "sliced"
+        },
+        {
+          "id": "ing_021",
+          "name": "fresh basil",
+          "amount": 0.25,
+          "unit": "cup",
+          "category": "herb",
+          "prep_note": "leaves only"
+        },
+        {
+          "id": "ing_022",
+          "name": "olive oil",
+          "amount": 2,
+          "unit": "tbsp",
+          "category": "fat",
+          "prep_note": "extra virgin"
+        },
+        {
+          "id": "ing_023",
+          "name": "garlic",
+          "amount": 2,
+          "unit": "cloves",
+          "category": "aromatic",
+          "prep_note": "minced"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "phase": "prep",
+          "instruction": "Remove pizza dough from refrigerator and let come to room temperature for 30 minutes.",
+          "time": 30,
+          "tips": "Room temperature dough is easier to stretch",
+          "equipment": []
+        },
+        {
+          "step": 2,
+          "phase": "prep",
+          "instruction": "Preheat oven to its highest temperature (usually 500-550°F) with pizza stone inside if you have one.",
+          "time": 30,
+          "tips": "High heat is crucial for crispy pizza crust",
+          "equipment": ["oven", "pizza_stone"]
+        },
+        {
+          "step": 3,
+          "phase": "prep",
+          "instruction": "Mix crushed tomatoes with minced garlic, salt, and 1 tbsp olive oil for pizza sauce.",
+          "time": 5,
+          "tips": "Keep sauce simple for authentic flavor",
+          "equipment": ["small_bowl"]
+        },
+        {
+          "step": 4,
+          "phase": "assembly",
+          "instruction": "On a floured surface, stretch dough into a 12-inch circle. Transfer to pizza pan or parchment paper.",
+          "time": 10,
+          "tips": "Work from center outward, letting gravity help stretch the dough",
+          "equipment": ["pizza_pan", "rolling_pin"]
+        },
+        {
+          "step": 5,
+          "phase": "assembly",
+          "instruction": "Spread sauce evenly over dough, leaving 1-inch border for crust.",
+          "time": 3,
+          "tips": "Don't oversauce or pizza will be soggy",
+          "equipment": ["spoon"]
+        },
+        {
+          "step": 6,
+          "phase": "assembly",
+          "instruction": "Distribute mozzarella slices evenly over sauce.",
+          "time": 2,
+          "tips": "Pat mozzarella dry to prevent watery pizza",
+          "equipment": []
+        },
+        {
+          "step": 7,
+          "phase": "cooking",
+          "instruction": "Bake for 10-12 minutes until crust is golden and cheese is bubbly and lightly browned.",
+          "time": 12,
+          "timer": true,
+          "tips": "Watch carefully in the last few minutes to prevent burning",
+          "equipment": ["oven"]
+        },
+        {
+          "step": 8,
+          "phase": "finishing",
+          "instruction": "Remove from oven and immediately top with fresh basil leaves and drizzle with remaining olive oil.",
+          "time": 2,
+          "tips": "Fresh basil added after cooking prevents it from wilting",
+          "equipment": []
+        }
+      ],
+      "nutrition_per_serving": {
+        "calories": 320,
+        "protein": 15,
+        "carbs": 35,
+        "fat": 14,
+        "fiber": 2,
+        "sugar": 4,
+        "sodium": 650
+      },
+      "equipment": ["oven", "pizza_stone", "pizza_pan", "rolling_pin"],
+      "storage": "Best served immediately. Leftover pizza can be refrigerated for 2-3 days.",
+      "substitutions": [
+        {
+          "ingredient": "fresh mozzarella",
+          "alternatives": ["shredded mozzarella", "burrata", "goat_cheese"]
+        },
+        {
+          "ingredient": "pizza dough",
+          "alternatives": ["naan_bread", "flatbread", "tortilla"]
+        }
+      ],
+      "cross_journey_data": {
+        "meal_plan_compatible": true,
+        "grocery_list_ready": true,
+        "tracking_enabled": true,
+        "cooking_guidance": true
+      }
+    }
+  ],
+  "search_indexes": {
+    "by_cuisine": {
+      "mediterranean": ["recipe_001"],
+      "asian": ["recipe_002"],
+      "italian": ["recipe_003"]
+    },
+    "by_dietary": {
+      "vegetarian": ["recipe_002", "recipe_003"],
+      "vegan": ["recipe_002"],
+      "gluten_free": ["recipe_001"],
+      "high_protein": ["recipe_001"],
+      "low_calorie": ["recipe_002"]
+    },
+    "by_time": {
+      "under_20": ["recipe_002"],
+      "under_30": [],
+      "under_45": ["recipe_001"],
+      "over_45": ["recipe_003"]
+    },
+    "by_occasion": {
+      "quick_lunch": ["recipe_002"],
+      "weeknight_dinner": ["recipe_002"],
+      "lunch": ["recipe_001"],
+      "dinner": ["recipe_001", "recipe_003"],
+      "party": ["recipe_003"],
+      "meal_prep": ["recipe_001"]
+    },
+    "by_ingredients": {
+      "chicken": ["recipe_001"],
+      "vegetables": ["recipe_002"],
+      "cheese": ["recipe_003"],
+      "tomatoes": ["recipe_001", "recipe_003"]
+    }
+  },
+  "metadata": {
+    "total_recipes": 3,
+    "cuisines": ["mediterranean", "asian", "italian"],
+    "dietary_options": ["vegetarian", "vegan", "gluten_free", "high_protein", "low_calorie"],
+    "difficulty_levels": ["easy", "medium"],
+    "max_prep_time": 90,
+    "min_prep_time": 10
+  }
+}

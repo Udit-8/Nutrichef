@@ -1,0 +1,7 @@
+# Core dependencies for Telegram bot deployment
+python-telegram-bot>=20.7
+python-dotenv>=1.0.0
+typing-extensions>=4.0.0
+
+# Additional Python standard libraries are already included
+# No external dependencies required for core chatbot functionality

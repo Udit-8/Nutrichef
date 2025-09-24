@@ -1,0 +1,335 @@
+{
+  "journey_flows": {
+    "recipe_discovery": {
+      "entry_triggers": [
+        "find recipe",
+        "show me recipes", 
+        "cook something",
+        "recipe ideas",
+        "what should I cook"
+      ],
+      "flow_steps": [
+        {
+          "step_id": "entry",
+          "step_name": "greeting_and_discovery_preference",
+          "bot_message": "I'd love to help you find the perfect recipe! How would you like to discover recipes today?",
+          "user_options": [
+            {
+              "id": "cuisine",
+              "text": "Browse by cuisine type",
+              "next_step": "cuisine_selection"
+            },
+            {
+              "id": "ingredients",
+              "text": "Search by ingredients I have",
+              "next_step": "ingredient_input"
+            },
+            {
+              "id": "dietary",
+              "text": "Filter by dietary restrictions", 
+              "next_step": "dietary_selection"
+            },
+            {
+              "id": "time",
+              "text": "Quick suggestions based on cooking time",
+              "next_step": "time_input"
+            },
+            {
+              "id": "occasion",
+              "text": "Occasion-based recipes",
+              "next_step": "occasion_selection"
+            }
+          ],
+          "data_needed": ["user_profile"],
+          "context_saved": ["discovery_method"]
+        },
+        {
+          "step_id": "cuisine_selection",
+          "step_name": "cuisine_preference_gathering",
+          "bot_message": "What cuisine are you in the mood for?",
+          "user_options": [
+            {"id": "mediterranean", "text": "Mediterranean"},
+            {"id": "asian", "text": "Asian"},
+            {"id": "italian", "text": "Italian"},
+            {"id": "mexican", "text": "Mexican"},
+            {"id": "american", "text": "American"},
+            {"id": "indian", "text": "Indian"}
+          ],
+          "next_step": "recipe_results",
+          "data_needed": ["recipes_database"],
+          "context_saved": ["selected_cuisine"],
+          "search_filters": {
+            "cuisine": "{{user_selection}}"
+          }
+        },
+        {
+          "step_id": "ingredient_input",
+          "step_name": "available_ingredients_input",
+          "bot_message": "What ingredients do you have available? You can list them separated by commas.",
+          "input_type": "text",
+          "next_step": "recipe_results",
+          "data_needed": ["recipes_database"],
+          "context_saved": ["available_ingredients"],
+          "search_filters": {
+            "ingredients_match": "{{user_ingredients}}"
+          }
+        },
+        {
+          "step_id": "dietary_selection",
+          "step_name": "dietary_restrictions_selection",
+          "bot_message": "Any dietary restrictions I should know about?",
+          "user_options": [
+            {"id": "vegetarian", "text": "Vegetarian"},
+            {"id": "vegan", "text": "Vegan"},
+            {"id": "gluten_free", "text": "Gluten-free"},
+            {"id": "dairy_free", "text": "Dairy-free"},
+            {"id": "keto", "text": "Keto"},
+            {"id": "low_carb", "text": "Low-carb"}
+          ],
+          "multiple_selection": true,
+          "next_step": "recipe_results",
+          "data_needed": ["recipes_database"],
+          "context_saved": ["dietary_restrictions"],
+          "search_filters": {
+            "dietary_tags": "{{user_selections}}"
+          }
+        },
+        {
+          "step_id": "time_input",
+          "step_name": "cooking_time_preference",
+          "bot_message": "How much time do you have to cook?",
+          "user_options": [
+            {"id": "under_20", "text": "Under 20 minutes", "filter_value": 20},
+            {"id": "20_to_45", "text": "20-45 minutes", "filter_value": 45},
+            {"id": "45_plus", "text": "45+ minutes", "filter_value": 999}
+          ],
+          "next_step": "recipe_results",
+          "data_needed": ["recipes_database"],
+          "context_saved": ["time_constraint"],
+          "search_filters": {
+            "max_total_time": "{{selected_time_limit}}"
+          }
+        },
+        {
+          "step_id": "occasion_selection",
+          "step_name": "occasion_based_selection",
+          "bot_message": "What's the occasion?",
+          "user_options": [
+            {"id": "quick_lunch", "text": "Quick lunch"},
+            {"id": "family_dinner", "text": "Family dinner"},
+            {"id": "date_night", "text": "Date night"},
+            {"id": "party", "text": "Party/entertaining"},
+            {"id": "meal_prep", "text": "Meal prep"}
+          ],
+          "next_step": "recipe_results",
+          "data_needed": ["recipes_database"],
+          "context_saved": ["occasion"],
+          "search_filters": {
+            "occasions": "{{user_selection}}"
+          }
+        },
+        {
+          "step_id": "recipe_results",
+          "step_name": "recipe_results_display",
+          "bot_message": "Here are some great recipes I found for you:",
+          "display_type": "recipe_cards",
+          "cards_count": 3,
+          "card_data": {
+            "fields": ["name", "image", "prep_time", "cook_time", "difficulty", "rating", "description"],
+            "source": "search_results"
+          },
+          "user_options": [
+            {"id": "view_details", "text": "View Details", "action": "recipe_detail_view"},
+            {"id": "save_recipe", "text": "Save Recipe", "action": "add_to_favorites"},
+            {"id": "get_more", "text": "Show More Options", "action": "expand_results"}
+          ],
+          "data_needed": ["recipes_database"],
+          "context_saved": ["viewed_recipes"]
+        },
+        {
+          "step_id": "recipe_detail_view",
+          "step_name": "detailed_recipe_information",
+          "bot_message": "Here are the full details for {{recipe_name}}:",
+          "display_type": "recipe_details",
+          "sections": ["ingredients", "instructions_preview", "nutrition_facts", "equipment_needed"],
+          "user_options": [
+            {
+              "id": "start_cooking",
+              "text": "Start Cooking",
+              "action": "transition_to_cooking_guidance",
+              "cross_journey": "cooking_guidance"
+            },
+            {
+              "id": "save_favorite",
+              "text": "Save to Favorites",
+              "action": "add_to_favorites"
+            },
+            {
+              "id": "add_meal_plan",
+              "text": "Add to Meal Plan",
+              "action": "transition_to_meal_planning",
+              "cross_journey": "meal_planning"
+            },
+            {
+              "id": "add_grocery_list",
+              "text": "Add to Grocery List", 
+              "action": "transition_to_grocery_assistance",
+              "cross_journey": "grocery_assistance"
+            },
+            {
+              "id": "back_to_results",
+              "text": "Back to Results",
+              "action": "return_to_results"
+            }
+          ]
+        }
+      ]
+    },
+    "cooking_guidance": {
+      "entry_triggers": [
+        "start cooking",
+        "guide me through cooking",
+        "cooking instructions",
+        "help me cook"
+      ],
+      "flow_steps": [
+        {
+          "step_id": "entry",
+          "step_name": "cooking_setup",
+          "bot_message": "Great! Let's get cooking {{recipe_name}}. How many servings do you want to make?",
+          "input_type": "number",
+          "default_value": "{{recipe_default_servings}}",
+          "next_step": "ingredient_check",
+          "data_needed": ["selected_recipe"],
+          "context_saved": ["target_servings"],
+          "calculations": ["adjust_ingredient_quantities"]
+        },
+        {
+          "step_id": "ingredient_check",
+          "step_name": "pre_cooking_checklist",
+          "bot_message": "Here are the ingredients you'll need (adjusted for {{servings}} servings). Do you have everything?",
+          "display_type": "ingredient_checklist",
+          "user_options": [
+            {"id": "have_all", "text": "Yes, I have everything", "next_step": "prep_phase"},
+            {"id": "missing_items", "text": "I'm missing some items", "next_step": "substitution_help"},
+            {"id": "add_to_grocery", "text": "Add missing items to grocery list", "cross_journey": "grocery_assistance"}
+          ],
+          "data_needed": ["adjusted_ingredients"]
+        },
+        {
+          "step_id": "prep_phase",
+          "step_name": "ingredient_preparation",
+          "bot_message": "Perfect! Let's start by preparing our ingredients.",
+          "display_type": "prep_steps",
+          "user_options": [
+            {"id": "ready_to_cook", "text": "I'm ready to start cooking", "next_step": "cooking_steps"},
+            {"id": "need_help", "text": "I need help with prep", "next_step": "prep_assistance"}
+          ],
+          "timer_available": true
+        },
+        {
+          "step_id": "cooking_steps",
+          "step_name": "interactive_step_by_step",
+          "bot_message": "Step {{current_step}} of {{total_steps}}: {{step_instruction}}",
+          "display_type": "cooking_step",
+          "step_data": {
+            "instruction": "{{current_instruction}}",
+            "timer": "{{step_timer}}",
+            "tips": "{{step_tips}}",
+            "visual_cues": "{{step_visual_cues}}"
+          },
+          "user_options": [
+            {"id": "next_step", "text": "Next Step", "action": "advance_step"},
+            {"id": "repeat_step", "text": "Repeat Step", "action": "repeat_current"},
+            {"id": "previous_step", "text": "Previous Step", "action": "go_back_step"},
+            {"id": "pause_cooking", "text": "Pause Cooking", "action": "pause_session"},
+            {"id": "voice_mode", "text": "Enable Voice Commands", "action": "activate_voice"}
+          ],
+          "voice_commands": ["next", "repeat", "pause", "timer"],
+          "context_saved": ["current_step", "step_completion_time"]
+        },
+        {
+          "step_id": "cooking_completion",
+          "step_name": "cooking_finished",
+          "bot_message": "Congratulations! You've finished cooking {{recipe_name}}. How did it turn out?",
+          "user_options": [
+            {"id": "rate_recipe", "text": "Rate this recipe (1-5 stars)", "input_type": "rating"},
+            {"id": "add_notes", "text": "Add cooking notes", "input_type": "text"},
+            {"id": "share_recipe", "text": "Share this recipe", "action": "share_recipe"},
+            {"id": "cook_again", "text": "Cook something else", "action": "return_to_recipe_discovery"},
+            {"id": "track_meal", "text": "Track this meal", "cross_journey": "food_tracking"}
+          ],
+          "context_saved": ["cooking_feedback", "completion_time"]
+        }
+      ]
+    }
+  },
+  "cross_journey_transitions": {
+    "recipe_discovery_to_cooking": {
+      "trigger_action": "start_cooking",
+      "data_transfer": {
+        "recipe_id": "selected_recipe",
+        "user_preferences": "dietary_restrictions",
+        "serving_adjustment": "default_servings"
+      },
+      "context_preservation": ["discovery_filters", "viewed_recipes"]
+    },
+    "recipe_discovery_to_grocery": {
+      "trigger_action": "add_to_grocery_list",
+      "data_transfer": {
+        "ingredients": "recipe_ingredients",
+        "quantities": "adjusted_quantities",
+        "source": "recipe_name"
+      }
+    },
+    "recipe_discovery_to_meal_planning": {
+      "trigger_action": "add_to_meal_plan",
+      "data_transfer": {
+        "recipe_id": "selected_recipe",
+        "meal_type": "suggested_meal_type",
+        "nutrition_info": "recipe_nutrition"
+      }
+    },
+    "cooking_to_tracking": {
+      "trigger_action": "track_meal",
+      "data_transfer": {
+        "food_components": "recipe_ingredients",
+        "portions": "actual_servings",
+        "meal_time": "cooking_completion_time"
+      }
+    },
+    "any_journey_to_favorites": {
+      "trigger_action": "save_to_favorites",
+      "data_transfer": {
+        "item_id": "current_item_id",
+        "item_type": "recipe|food|meal_plan",
+        "timestamp": "current_time"
+      }
+    }
+  },
+  "conversation_context_management": {
+    "session_persistence": {
+      "active_journey": true,
+      "user_preferences": true,
+      "conversation_history": "last_10_exchanges",
+      "current_data": true
+    },
+    "context_switching": {
+      "preserve_on_transition": ["user_profile", "current_selections"],
+      "reset_on_new_session": ["temporary_data", "search_results"],
+      "carry_forward": ["favorites", "recent_activity"]
+    },
+    "error_handling": {
+      "fallback_responses": {
+        "no_results_found": "I couldn't find any recipes matching your criteria. Would you like to try different filters?",
+        "invalid_input": "I didn't understand that. Could you please try again?",
+        "system_error": "I'm experiencing some technical difficulties. Let me try to help you in a different way."
+      },
+      "recovery_actions": {
+        "return_to_main_menu": true,
+        "suggest_alternatives": true,
+        "escalate_to_human": false
+      }
+    }
+  }
+}

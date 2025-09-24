@@ -1,0 +1,258 @@
+{
+  "meal_suggestions": {
+    "calorie_brackets": {
+      "200_300": [
+        {
+          "id": "meal_001",
+          "name": "Greek Yogurt Parfait",
+          "calories": 245,
+          "meal_type": ["breakfast", "snack"],
+          "prep_time": 5,
+          "image": "images/yogurt_parfait.jpg",
+          "components": [
+            {
+              "food_id": "food_004",
+              "name": "Greek yogurt",
+              "amount": 150,
+              "unit": "g"
+            },
+            {
+              "food_id": "food_101",
+              "name": "mixed berries",
+              "amount": 80,
+              "unit": "g"
+            },
+            {
+              "food_id": "food_102",
+              "name": "granola",
+              "amount": 20,
+              "unit": "g"
+            }
+          ],
+          "macros": {
+            "protein": 18,
+            "carbs": 32,
+            "fat": 5,
+            "fiber": 6
+          },
+          "dietary_tags": ["vegetarian", "gluten_free"],
+          "substitutions": [
+            {
+              "component": "granola",
+              "alternatives": ["chopped_nuts", "chia_seeds", "coconut_flakes"]
+            }
+          ]
+        }
+      ],
+      "300_400": [
+        {
+          "id": "meal_002",
+          "name": "Grilled Chicken Salad",
+          "calories": 385,
+          "meal_type": ["lunch", "dinner"],
+          "prep_time": 15,
+          "image": "images/chicken_salad.jpg",
+          "components": [
+            {
+              "food_id": "food_001",
+              "name": "grilled chicken breast",
+              "amount": 120,
+              "unit": "g"
+            },
+            {
+              "food_id": "food_103",
+              "name": "mixed greens",
+              "amount": 100,
+              "unit": "g"
+            },
+            {
+              "food_id": "food_104",
+              "name": "cherry tomatoes",
+              "amount": 100,
+              "unit": "g"
+            },
+            {
+              "food_id": "food_105",
+              "name": "cucumber",
+              "amount": 80,
+              "unit": "g"
+            },
+            {
+              "food_id": "food_106",
+              "name": "olive oil vinaigrette",
+              "amount": 15,
+              "unit": "ml"
+            }
+          ],
+          "macros": {
+            "protein": 32,
+            "carbs": 12,
+            "fat": 18,
+            "fiber": 5
+          },
+          "dietary_tags": ["gluten_free", "high_protein", "low_carb"],
+          "substitutions": [
+            {
+              "component": "chicken",
+              "alternatives": ["salmon", "tofu", "chickpeas"]
+            }
+          ]
+        }
+      ],
+      "500_600": [
+        {
+          "id": "meal_003",
+          "name": "Quinoa Power Bowl",
+          "calories": 545,
+          "meal_type": ["lunch", "dinner"],
+          "prep_time": 25,
+          "image": "images/quinoa_bowl.jpg",
+          "components": [
+            {
+              "food_id": "food_002",
+              "name": "cooked quinoa",
+              "amount": 150,
+              "unit": "g"
+            },
+            {
+              "food_id": "food_001",
+              "name": "grilled chicken",
+              "amount": 100,
+              "unit": "g"
+            },
+            {
+              "food_id": "food_003",
+              "name": "steamed broccoli",
+              "amount": 100,
+              "unit": "g"
+            },
+            {
+              "food_id": "food_107",
+              "name": "avocado",
+              "amount": 50,
+              "unit": "g"
+            },
+            {
+              "food_id": "food_108",
+              "name": "sweet potato",
+              "amount": 100,
+              "unit": "g"
+            }
+          ],
+          "macros": {
+            "protein": 38,
+            "carbs": 55,
+            "fat": 15,
+            "fiber": 12
+          },
+          "dietary_tags": ["gluten_free", "high_protein", "high_fiber"],
+          "substitutions": [
+            {
+              "component": "quinoa",
+              "alternatives": ["brown_rice", "cauliflower_rice", "farro"]
+            }
+          ]
+        }
+      ]
+    },
+    "daily_meal_plans": [
+      {
+        "id": "daily_001",
+        "name": "Balanced 1800 Calorie Day",
+        "total_calories": 1785,
+        "target_calories": 1800,
+        "meals": {
+          "breakfast": {
+            "meal_id": "meal_001",
+            "calories": 245,
+            "time_slot": "07:00-08:00"
+          },
+          "mid_morning_snack": {
+            "meal_id": "meal_004",
+            "calories": 180,
+            "time_slot": "10:00-10:30"
+          },
+          "lunch": {
+            "meal_id": "meal_002", 
+            "calories": 385,
+            "time_slot": "12:30-13:30"
+          },
+          "afternoon_snack": {
+            "meal_id": "meal_005",
+            "calories": 150,
+            "time_slot": "15:30-16:00"
+          },
+          "dinner": {
+            "meal_id": "meal_003",
+            "calories": 545,
+            "time_slot": "18:30-19:30"
+          },
+          "evening_snack": {
+            "meal_id": "meal_006",
+            "calories": 280,
+            "time_slot": "20:30-21:00"
+          }
+        },
+        "daily_totals": {
+          "protein": 142,
+          "carbs": 185,
+          "fat": 65,
+          "fiber": 35
+        },
+        "meal_distribution": {
+          "breakfast_percent": 14,
+          "lunch_percent": 22,
+          "dinner_percent": 31,
+          "snacks_percent": 33
+        }
+      }
+    ]
+  },
+  "meal_customization_options": {
+    "portion_adjustments": {
+      "smaller": 0.75,
+      "normal": 1.0,
+      "larger": 1.25,
+      "double": 2.0
+    },
+    "ingredient_swaps": {
+      "protein_alternatives": {
+        "chicken": ["turkey", "salmon", "tofu", "tempeh", "chickpeas"],
+        "salmon": ["chicken", "turkey", "tofu", "tuna"],
+        "tofu": ["chicken", "tempeh", "chickpeas", "lentils"]
+      },
+      "grain_alternatives": {
+        "quinoa": ["brown_rice", "wild_rice", "farro", "cauliflower_rice"],
+        "brown_rice": ["quinoa", "wild_rice", "barley"],
+        "pasta": ["zucchini_noodles", "shirataki_noodles", "quinoa_pasta"]
+      },
+      "vegetable_alternatives": {
+        "broccoli": ["cauliflower", "green_beans", "asparagus"],
+        "spinach": ["kale", "arugula", "swiss_chard"],
+        "bell_peppers": ["zucchini", "eggplant", "mushrooms"]
+      }
+    }
+  },
+  "cross_journey_integration": {
+    "to_recipe_discovery": {
+      "expand_meal_to_recipe": true,
+      "find_similar_recipes": true
+    },
+    "to_meal_planning": {
+      "add_to_weekly_plan": true,
+      "create_meal_rotation": true
+    },
+    "to_grocery_assistance": {
+      "generate_shopping_list": true,
+      "ingredient_consolidation": true
+    },
+    "to_food_tracking": {
+      "log_meal_components": true,
+      "track_nutrition_goals": true
+    },
+    "to_cooking_guidance": {
+      "step_by_step_available": true,
+      "prep_instructions": true
+    }
+  }
+}
